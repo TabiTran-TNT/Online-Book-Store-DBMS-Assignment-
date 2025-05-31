@@ -1,0 +1,16 @@
+{% load i18n %}
+
+<div class="row">
+    <div class="col-6">
+        {% spaceless %}{% for widget in widget.subwidgets %}{% include widget.template_name %}{% endfor %}{% endspaceless %}
+    </div>
+    <div class="col-6 d-flex">
+        {% spaceless %}
+            {% if audio %}
+                <a title="{% trans "Play CAPTCHA as audio file" %}" href="{{ audio }}">
+            {% endif %}
+            <img src="{{ image }}" alt="captcha" class="captcha" />
+            {% if audio %}</a>{% endif %}
+        {% endspaceless %}
+    </div>
+</div>

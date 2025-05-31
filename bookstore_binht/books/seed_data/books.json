@@ -1,0 +1,1402 @@
+[
+    {
+      "model": "books.book",
+      "pk": 1,
+      "fields": {
+        "title": "Freakonomics: A Rogue Economist Explores the Hidden Side of Everything - by Steven D. Levitt & Stephen J. Dubner",
+        "description": "Which is more dangerous, a gun or a swimming pool? What do schoolteachers and sumo wrestlers have in common? Why do drug dealers still live with their moms? How much do parents really matter? What kind of impact did Roe v. Wade have on violent crime?\r\n\r\nThese may not sound like typical questions for an economist to ask. But Steven D. Levitt is not a typical economist. He is a much heralded scholar who studies the stuff and riddles of everyday life-; from cheating and crime to sports and child rearing-; and whose conclusions regularly turn the conventional wisdom on its head. He usually begins with a mountain of data and a simple, unasked question. Some of these questions concern life-and-death issues; others have an admittedly freakish quality. Thus the new field of study contained in this book: freakonomics.\r\n\r\nThrough forceful storytelling and wry insight, Levitt and co-author Stephen J. Dubner show that economics is, at root, the study of incentives-; how people get what they want, or need, especially when other people want or need the same thing. In \"Freakonomics,\" they set out to explore the hidden side of ... well, everything. The inner workings of a crack gang. The truth about real-estate agents. The myths of campaign finance. The telltale marks of a cheating schoolteacher. The secrets of the Ku Klux Klan.\r\n\r\nWhat unites all these stories is a belief that the modern world, despite a surfeit of obfuscation, complication, and downright deceit, is not impenetrable, is not unknowable, and-; if the right questions are asked-; is even more intriguing than we think. All it takes is a new way of looking. Steven Levitt, through devilishly clever and clear-eyed thinking, shows how to seethrough all the clutter.\r\n\r\n\"Freakonomics\" establishes this unconventional premise: If morality represents how we would like the world to work, then economics represents how it actually does work. It is true that readers of this book will be armed with enough riddles and stories to last a thousand cocktail parties. But \"Freakonomics\" can provide more than that. It will literally redefine the way we view the modern world.",
+        "author_name": "Steven D. Levitt, Stephen J. Dubner",
+        "publisher_name": "William Morrow",
+        "published_date": "2005-05-01",
+        "unit_price": 100000,
+        "photo": "books/freakonomics.jpg",
+        "page_count": 336,
+        "isbn": "9780060731328",
+        "dimensions": "17.1 x 2.1 x 10.6 cm",
+        "weight": 250.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [3, 4]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 2,
+      "fields": {
+        "title": "Pro Git",
+        "description": "Pro Git is your fully-updated guide to Git and its usage in the modern world. Git has come a long way since it was first developed by Linus Torvalds for Linux kernel development. It has taken the open source world by storm since its inception in 2005, and this book teaches you how to use it like a pro.\r\n\r\nEffective and well-implemented version control is a necessity for successful web projects, whether large or small. With this book you’ll learn how to master the world of distributed version workflow, use the distributed features of Git to the full, and extend Git to meet your every need.",
+        "author_name": "Scott Chacon and Ben Straub",
+        "publisher_name": "Apress",
+        "published_date": "2015-01-01",
+        "unit_price": 100000,
+        "photo": "books/pro-git.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [7, 10]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 3,
+      "fields": {
+        "title": "Steve Jobs",
+        "description": "Based on more than forty interviews with Jobs conducted over two years -- as well as interviews with more than a hundred family members, friends, adversaries, competitors, and colleagues -- Walter Isaacson has written a riveting story of the roller-coaster life and searingly intense personality of a creative entrepreneur whose passion for perfection and ferocious drive revolutionized six industries: personal computers, animated movies, music, phones, tablet computing, and digital publishing. At a time when America is seeking ways to sustain its innovative edge, and when societies around the world are trying to build digital-age economies, Jobs stands as the ultimate icon of inventiveness and applied imagination. He knew that the best way to create value in the twenty-first century was to connect creativity with technology. He built a company where leaps of the imagination were combined with remarkable feats of engineering. Although Jobs cooperated with this book, he asked for no control over what was written nor even the right to read it before it was published. He put nothing off-limits. He encouraged the people he knew to speak honestly. And Jobs speaks candidly, sometimes brutally so, about the people he worked with and competed against. His friends, foes, and colleagues provide an unvarnished view of the passions, perfectionism, obsessions, artistry, devilry, and compulsion for control that shaped his approach to business and the innovative products that resulted. Driven by demons, Jobs could drive those around him to fury and despair. But his personality and products were interrelated, just as Apple's hardware and software tended to be, as if part of an integrated system. His tale is instructive and cautionary, filled with lessons about innovation, character, leadership, and values.",
+        "author_name": "Walter Isaacson",
+        "publisher_name": "The World",
+        "published_date": "2013-09-10",
+        "unit_price": 75000,
+        "photo": "books/steve-jobs.jpg",
+        "page_count": 200,
+        "isbn": "9781451648546",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [4, 9]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 4,
+      "fields": {
+        "title": "The C programming language",
+        "description": "The authors present the complete guide to ANSI standard C language programming. Written by the developers of C, this new version helps readers keep up with the finalized ANSI standard for C while showing how to take advantage of C's rich set of operators, economy of expression, improved control flow, and data structures. The 2/E has been completely rewritten with additional examples and problem sets to clarify the implementation of difficult language constructs. For years, C programmers have let K&R guide them to building well-structured and efficient programs. Now this same help is available to those working with ANSI compilers. Includes detailed coverage of the C language plus the official C language reference manual for at-a-glance help with syntax notation, declarations, ANSI changes, scope rules, and the list goes on and on.",
+        "author_name": "Brian W. Kernighan, Dennis MacAlistair Ritchie",
+        "publisher_name": "Pearson",
+        "published_date": "1988-03-22",
+        "unit_price": 500000,
+        "photo": "books/c-lang.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [1, 6, 7]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 5,
+      "fields": {
+        "title": "Software Engineering - 10th Edition",
+        "description": "The Fundamental Practice of Software Engineering\r\n\r\nSoftware Engineering introduces readers to the overwhelmingly important subject of software programming and development. In the past few years, computer systems have come to dominate not just our technological growth, but the foundations of our world’s major industries. This text seeks to lay out the fundamental concepts of this huge and continually growing subject area in a clear and comprehensive manner.\r\n\r\nThe Tenth Edition contains new information that highlights various technological updates of recent years, providing readers with highly relevant and current information. Sommerville’s experience in system dependability and systems engineering guides the text through a traditional plan-based approach that incorporates some novel agile methods. The text strives to teach the innovators of tomorrow how to create software that will make our world a better, safer, and more advanced place to live.",
+        "author_name": "Ian Sommerville",
+        "publisher_name": "Pearson",
+        "published_date": "2015-03-24",
+        "unit_price": 3720000,
+        "photo": "books/sw-ian.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [7, 10, 11]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 6,
+      "fields": {
+        "title": "JavaScript from Beginner to Professional",
+        "description": "This book demonstrates the capabilities of JavaScript for web application development by combining theoretical learning with code exercises and fun projects that you can challenge yourself with. The guiding principle of the book is to show how straightforward JavaScript techniques can be used to make web apps ranging from dynamic websites to simple browser-based games.\r\n\r\nJavaScript from Beginner to Professional focuses on key programming concepts and DOM (Document Object Model) manipulations that are used to solve common problems in professional web applications. These include data validation, manipulating the appearance of web pages, working with asynchronous and concurrent code, and much more.\r\n\r\nThe book follows project-based learning to provide context for the theoretical components in a series of code examples that can be used as modules of an application, such as input validators, games, and simple animations. This will be supplemented with a brief crash course on HTML and CSS to illustrate how JavaScript components fit into a complete web application.\r\n\r\nAs you learn the concepts, you can try them in your own editor or browser console to get a solid understanding of how they work and what they do. By the end of this JavaScript book, you will feel confident writing core JavaScript code and be equipped to progress to more advanced libraries, frameworks, and environments such as React, Angular, and Node.js.",
+        "author_name": "Laurence Lars Svekis, Maaike Van Putten, Rob Percival",
+        "publisher_name": "Packt Publishing",
+        "published_date": "2021-12-15",
+        "unit_price": 600000,
+        "photo": "books/javascript.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [3, 6, 7, 11]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 7,
+      "fields": {
+        "title": "The Road to React: Your journey to master plain yet pragmatic React.js",
+        "description": "The Road to React: The React.js with Hooks in JavaScript Book (2024 Edition) - is a comprehensive and pragmatic yet concise React 18 with Hooks (+ opt-in TypeScript) book. Purchase of this book includes free online access to the always up-to-date digital book.\r\n\r\n\"The Road to React\" made its debut in 2016, and since then, I've almost rewritten it annually. This book teaches the core principles of React, guiding you through building a practical application in pure React without complex tooling. The book covers everything from setting up the project to deploying it on a server. Each chapter includes additional recommended reading and exercises. By the end, you'll have the skills to develop your own React applications.\r\n\r\nIn \"The Road to React,\" I establish a solid foundation before delving into the broader React ecosystem. The book clarifies general concepts, patterns, and best practices for real-world React applications. Ultimately, you'll learn to construct a React application from scratch, incorporating features such as pagination, client-side and server-side searching, and advanced UI interactions like sorting.",
+        "author_name": "Robin Wieruch",
+        "publisher_name": "Robin Wieruch",
+        "published_date": "2018-09-14",
+        "unit_price": 300000,
+        "photo": "books/road-to-react.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [3, 7, 10, 11]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 8,
+      "fields": {
+        "title": "Web Design with HTML, CSS, JavaScript and jQuery Set 1st Edition",
+        "description": "A two-book set for web designers and front-end developers\r\nThis two-book set combines the titles HTML & CSS: Designing and Building Web Sites and JavaScript & jQuery: Interactive Front-End Development. Together these two books form an ideal platform for anyone who wants to master HTML and CSS before stepping up to JavaScript and jQuery.\r\n\r\nHTML & CSS covers structure, text, links, images, tables, forms, useful options, adding style with CSS, fonts, colors, thinking in boxes, styling lists and tables, layouts, grids, and even SEO, Google analytics, ftp, and HTML5. JavaScript & jQuery offers an excellent combined introduction to these two technologies using a clear and simple visual approach using diagrams, infographics, and photographs.",
+        "author_name": "Jon Duckett",
+        "publisher_name": "Wiley",
+        "published_date": "2014-07-08",
+        "unit_price": 250000,
+        "photo": "books/web-design-html.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [7, 10, 11]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 9,
+      "fields": {
+        "title": "Eloquent JavaScript, 3rd Edition: A Modern Introduction to Programming",
+        "description": "JavaScript lies at the heart of almost every modern web application, from social apps like Twitter to browser-based game frameworks like Phaser and Babylon. Though simple for beginners to pick up and play with, JavaScript is a flexible, complex language that you can use to build full-scale applications.\r\n\r\nThis much anticipated and thoroughly revised third edition of Eloquent JavaScript dives deep into the JavaScript language to show you how to write beautiful, effective code. It has been updated to reflect the current state of Java¬Script and web browsers and includes brand-new material on features like class notation, arrow functions, iterators, async functions, template strings, and block scope. A host of new exercises have also been added to test your skills and keep you on track.",
+        "author_name": "Marijn Haverbeke",
+        "publisher_name": "No Starch Press",
+        "published_date": "2018-12-04",
+        "unit_price": 200000,
+        "photo": "books/eloquent-js.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [6, 7, 10, 11]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 10,
+      "fields": {
+        "title": "Programming TypeScript: Making Your JavaScript Applications Scale",
+        "description": "Any programmer working with a dynamically typed language will tell you how hard it is to scale to more lines of code and more engineers. That’s why Facebook, Google, and Microsoft invented gradual static type layers for their dynamically typed JavaScript and Python code. This practical book shows you how one such type layer, TypeScript, is unique among them: it makes programming fun with its powerful static type system.\r\n\r\nIf you’re a programmer with intermediate JavaScript experience, author Boris Cherny will teach you how to master the TypeScript language. You’ll understand how TypeScript can help you eliminate bugs in your code and enable you to scale your code across more engineers than you could before.\r\n\r\nIn this book, you’ll: Start with the basics: Learn about TypeScript’s different types and type operators, including what they’re for and how they’re used; Explore advanced topics: Understand TypeScript’s sophisticated type system, including how to safely handle errors and build asynchronous programs; Dive in hands-on: Use TypeScript with your favorite frontend and backend frameworks, migrate your existing JavaScript project to TypeScript, and run your TypeScript application in production",
+        "author_name": "Boris Cherny",
+        "publisher_name": "O'Reilly Media",
+        "published_date": "2019-05-23",
+        "unit_price": 200000,
+        "photo": "books/typescript.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [6, 7, 10, 11]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 11,
+      "fields": {
+        "title": "The Linux Command Line, 2nd Edition: A Complete Introduction",
+        "description": "You've experienced the shiny, point-and-click surface of your Linux computer—now dive below and explore its depths with the power of the command line.\r\n\r\nThe Linux Command Line takes you from your very first terminal keystrokes to writing full programs in Bash, the most popular Linux shell (or command line). Along the way you'll learn the timeless skills handed down by generations of experienced, mouse-shunning gurus: file navigation, environment configuration, command chaining, pattern matching with regular expressions, and more.\r\n\r\nIn addition to that practical knowledge, author William Shotts reveals the philosophy behind these tools and the rich heritage that your desktop Linux machine has inherited from Unix supercomputers of yore.",
+        "author_name": "William Shotts",
+        "publisher_name": "No Starch Press",
+        "published_date": "2019-03-07",
+        "unit_price": 150000,
+        "photo": "books/linux-cli.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [3, 7, 10]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 12,
+      "fields": {
+        "title": "A Game of Thrones",
+        "description": "Here is the first volume in George R. R. Martin’s magnificent cycle of novels that includes A Clash of Kings and A Storm of Swords. As a whole, this series comprises a genuine masterpiece of modern fantasy, bringing together the best the genre has to offer. Magic, mystery, intrigue, romance, and adventure fill these pages and transport us to a world unlike any we have ever experienced. Already hailed as a classic, George R. R. Martin’s stunning series is destined to stand as one of the great achievements of imaginative fiction.\r\n\r\nA GAME OF THRONES\r\n\r\nLong ago, in a time forgotten, a preternatural event threw the seasons out of balance. In a land where summers can last decades and winters a lifetime, trouble is brewing. The cold is returning, and in the frozen wastes to the north of Winterfell, sinister and supernatural forces are massing beyond the kingdom’s protective Wall. At the center of the conflict lie the Starks of Winterfell, a family as harsh and unyielding as the land they were born to. Sweeping from a land of brutal cold to a distant summertime kingdom of epicurean plenty, here is a tale of lords and ladies, soldiers and sorcerers, assassins and bastards, who come together in a time of grim omens.\r\n\r\nHere an enigmatic band of warriors bear swords of no human metal; a tribe of fierce wildlings carry men off into madness; a cruel young dragon prince barters his sister to win back his throne; and a determined woman undertakes the most treacherous of journeys. Amid plots and counterplots, tragedy and betrayal, victory and terror, the fate of the Starks, their allies, and their enemies hangs perilously in the balance, as each endeavors to win that deadliest of conflicts: the game of thrones.",
+        "author_name": "George R. R. Martin",
+        "publisher_name": "Bantam Books",
+        "published_date": "2002-05-28",
+        "unit_price": 100000,
+        "photo": "books/game-of-throne.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [2, 5]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 13,
+      "fields": {
+        "title": "A creative approach to music fundamentals",
+        "description": "\"A Creative Approach to Music Fundamentals\" is an innovative and engaging guide designed to demystify the core concepts of music theory and composition. This book takes readers on a journey through the building blocks of music, presenting traditional concepts in fresh, imaginative ways that appeal to both beginners and experienced musicians alike.\r\n\r\nThrough a series of interactive exercises, real-world examples, and multimedia resources, author [Name] bridges the gap between technical knowledge and creative expression. Readers will explore rhythm, melody, harmony, and form through hands-on activities that encourage experimentation and personal discovery.",
+        "author_name": "William Duckworth",
+        "publisher_name": "Wadsworth/Thomson Learning",
+        "published_date": "2001-01-01",
+        "unit_price": 100000,
+        "photo": "books/music-fundamentals.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [3]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 14,
+      "fields": {
+        "title": "Think Python: How to Think Like a Computer Scientist",
+        "description": "If you want to learn how to program, working with Python is an excellent way to start. This hands-on guide takes you through the language a step at a time, beginning with basic programming concepts before moving on to functions, recursion, data structures, and object-oriented design. This second edition and its supporting code have been updated for Python 3.\r\n\r\nThrough exercises in each chapter, you’ll try out programming concepts as you learn them. Think Python is ideal for students at the high school or college level, as well as self-learners, home-schooled students, and professionals who need to learn programming basics. Beginners just getting their feet wet will learn how to start with Python in a browser.",
+        "author_name": "Allen B. Downey",
+        "publisher_name": "O'Reilly Media",
+        "published_date": "2016-01-26",
+        "unit_price": 300000,
+        "photo": "books/think-python.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [3, 6, 7, 10]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 15,
+      "fields": {
+        "title": "Programming Ruby 1.9 & 2.0: The Pragmatic Programmers' Guide",
+        "description": "Ruby is the fastest growing and most exciting dynamic language out there. If you need to get working programs delivered fast, you should add Ruby to your toolbox.\r\n\r\nThis book is the only complete reference for both Ruby 1.9 and Ruby 2.0, the very latest version of Ruby.\r\n\r\n2013 marks the 20th anniversary of the Ruby language. We're proud that throughout its history, we've continued to cover the latest version of Ruby.\r\n\r\nWould you like to go from first idea to working code much, much faster? Do you currently spend more time satisfying the compiler instead of your clients or end users? Are you frustrated with demanding languages that seem to get in your way, instead of getting the work done? Are you using Rails, and want to dig deeper into the underlying Ruby language? If so, then we've got a language and book for you!\r\n\r\nRuby is a fully object-oriented language, much like the classic object-oriented language, Smalltalk. Like Smalltalk, it is dynamically typed (as opposed to Java or C++), but unlike Smalltalk, Ruby features the same conveniences found in modern scripting languages such as Perl and Python.\r\n\r\nThe combination of the power of a pure object-oriented language with the convenience of a scripting language makes Ruby a favorite tool of intelligent, forward-thinking programmers.",
+        "author_name": "Dave Thomas, Andy Hunt, Chad Fowler",
+        "publisher_name": "Pragmatic Bookshelf",
+        "published_date": "2013-08-06",
+        "unit_price": 200000,
+        "photo": "books/ruby.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [3, 6, 7, 10]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 16,
+      "fields": {
+        "title": "Calculus 8th Edition",
+        "description": "Success in your calculus course starts here! James Stewart's CALCULUS texts are world-wide best-sellers for a reason: they are clear, accurate, and filled with relevant, real-world examples. With CALCULUS, Eighth Edition, Stewart conveys not only the utility of calculus to help you develop technical competence, but also gives you an appreciation for the intrinsic beauty of the subject. His patient examples and built-in learning aids will help you build your mathematical confidence and achieve your goals in the course!",
+        "author_name": "James Stewart",
+        "publisher_name": "Cengage Learning",
+        "published_date": "2015-05-19",
+        "unit_price": 100000,
+        "photo": "books/calculus-8th.jpg",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [1, 3]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 17,
+      "fields": {
+        "title": "Sample Book - Copy 0",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 18,
+      "fields": {
+        "title": "Sample Book - Copy 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_UwIsmNh.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 19,
+      "fields": {
+        "title": "Sample Book - Copy 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_9DRCJPo.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 20,
+      "fields": {
+        "title": "Sample Book - Copy 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_vqOiUTv.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 21,
+      "fields": {
+        "title": "Sample Book - Copy 4",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_ijwN1Xr.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 22,
+      "fields": {
+        "title": "Sample Book - Copy 5",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_23RwTGr.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 23,
+      "fields": {
+        "title": "Sample Book - Copy 6",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_2YDL6ZC.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 24,
+      "fields": {
+        "title": "Sample Book - Copy 7",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_3ZLaRsg.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 25,
+      "fields": {
+        "title": "Sample Book - Copy 8",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_IS4CEPA.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 26,
+      "fields": {
+        "title": "Sample Book - Copy 9",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_FZATsqD.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 27,
+      "fields": {
+        "title": "Sample Book - Copy 10",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_JK1aXX0.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 28,
+      "fields": {
+        "title": "Sample Book - Copy 11",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_M0H9aa3.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 29,
+      "fields": {
+        "title": "Sample Book - Copy 12",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 30,
+      "fields": {
+        "title": "Sample Book - Copy 13",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_DaNjgoc.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 31,
+      "fields": {
+        "title": "Sample Book - Copy 14",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_13M5nuh.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 32,
+      "fields": {
+        "title": "Sample Book - Copy 15",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_8Akrdap.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 33,
+      "fields": {
+        "title": "The Secret Garden (Collins Classics)",
+        "description": "HarperCollins is proud to present its range of best-loved, essential classics.",
+        "author_name": "Frances Hodgson Burnett",
+        "publisher_name": "William Collins",
+        "published_date": "2006-07-03",
+        "unit_price": 45900,
+        "photo": "books/the_secret_garden.png",
+        "page_count": 288,
+        "isbn": "9781234567897",
+        "dimensions": "18 x 11 x 2 cm",
+        "weight": 400.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [2, 5]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 34,
+      "fields": {
+        "title": "Moby Dick (Alma Classics Evergreens)",
+        "description": "When the young Ishmael gets on board Captain Ahab's whaling ship, little does he suspect that the mission on which he is about to embark is the fulfilment of his master's obsessive desire for revenge on Moby Dick, a white whale who has already claimed countless human victims and destroyed many fleets. With some sinister crew members in their midst and the hazardous conditions of the sea to contend with, the expedition becomes increasingly dangerous the closer it gets to its quarry. One of the great American novels, if not the greatest, Moby Dick epically combines rip-roaring adventure, a meticulously realistic portrayal of the whaling trade and a profound philosophical disquisition on the nature of good and evil.",
+        "author_name": "Herman Melville, Foreword by Jay Parini",
+        "publisher_name": "Macmillan Publishers",
+        "published_date": "2006-04-17",
+        "unit_price": 134300,
+        "photo": "books/moby_dick.png",
+        "page_count": 200,
+        "isbn": "9780143105954",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [2, 5]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 35,
+      "fields": {
+        "title": "Pride and Prejudice (Collins Classics)",
+        "description": "HarperCollins is proud to present its range of best-loved, essential classics.\r\n\r\n‘It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.’\r\n\r\nAusten's best-loved tale of love, marriage and society in class-conscious Georgian England still delights modern readers today with its comedy and characters. It follows the feisty, quick-witted Elizabeth Bennet as her parents seek to ensure good marriages for her and her sisters in order to secure their future. The protagonists Darcy and Elizabeth learn much about themselves and those around them and Austen's expertly crafted comedy characters of Mrs Bennet and Mr Collins demonstrate her great artistry as a writer.",
+        "author_name": "Jane Austen",
+        "publisher_name": "William Collins",
+        "published_date": "2011-06-19",
+        "unit_price": 45900,
+        "photo": "books/pride_and_prejudice.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [5]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 36,
+      "fields": {
+        "title": "The Snowball: Warren Buffett and the Business of Life",
+        "description": "Here is THE book recounting the life and times of one of the most respected men in the world, Warren Buffett. The legendary Omaha investor has never written a memoir, but now he has allowed one writer, Alice Schroeder, unprecedented access to explore directly with him and with those closest to him his work, opinions, struggles, triumphs, follies, and wisdom. The result is the personally revealing and complete biography of the man known everywhere as “The Oracle of Omaha.”\r\n\r\nAlthough the media track him constantly, Buffett himself has never told his full life story. His reality is private, especially by celebrity standards. Indeed, while the homespun persona that the public sees is true as far as it goes, it goes only so far. Warren Buffett is an array of paradoxes. He set out to prove that nice guys can finish first. Over the years he treated his investors as partners, acted as their steward, and championed honesty as an investor, CEO, board member, essayist, and speaker. At the same time he became the world’s richest man, all from the modest Omaha headquarters of his company Berkshire Hathaway. None of this fits the term “simple.”\r\n\r\nWhen Alice Schroeder met Warren Buffett she was an insurance industry analyst and a gifted writer known for her keen perception and business acumen. Her writings on finance impressed him, and as she came to know him she realized that while much had been written on the subject of his investing style, no one had moved beyond that to explore his larger philosophy, which is bound up in a complex personality and the details of his life. Out of this came his decision to cooperate with her on the book about himself that he would never write.\r\n\r\nNever before has Buffett spent countless hours responding to a writer’s questions, talking, giving complete access to his wife, children, friends, and business associates—opening his files, recalling his childhood. It was an act of courage, as The Snowball makes immensely clear. Being human, his own life, like most lives, has been a mix of strengths and frailties. Yet notable though his wealth may be, Buffett’s legacy will not be his ranking on the scorecard of wealth; it will be his principles and ideas that have enriched people’s lives. This book tells you why Warren Buffett is the most fascinating American success story of our time.",
+        "author_name": "Alice Schroeder",
+        "publisher_name": "Bloomsbury Publishing PLC",
+        "published_date": "2009-09-01",
+        "unit_price": 303300,
+        "photo": "books/warren_buffett.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [3, 4]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 37,
+      "fields": {
+        "title": "The Lean Startup",
+        "description": "Most startups fail. But many of those failures are preventable.  The Lean Startup is a new approach being adopted across the globe, changing the way companies are built and new products are launched.\r\n\r\nEric Ries defines a startup as an organization dedicated to creating something new under conditions of extreme uncertainty. This is just as true for one person in a garage or a group of seasoned professionals in a Fortune 500 boardroom. What they have in common is a mission to penetrate that fog of uncertainty to discover a successful path to a sustainable business.\r\n\r\nThe Lean Startup approach fosters companies that are both more capital efficient and that leverage human creativity more effectively.  Inspired by lessons from lean manufacturing, it relies on “validated learning,” rapid scientific experimentation, as well as a number of counter-intuitive practices that shorten product development cycles, measure actual progress without resorting to vanity metrics, and learn what customers really want. It enables a company to shift directions with agility, altering plans inch by inch, minute by minute.\r\n\r\nRather than wasting time creating elaborate business plans, The Lean Startup offers entrepreneurs - in companies of all sizes - a way to test their vision continuously, to adapt and adjust before it’s too late. Ries provides a scientific approach to creating and managing successful startups in a age when companies need to innovate more than ever.",
+        "author_name": "Eric Ries",
+        "publisher_name": "Random House USA Inc",
+        "published_date": "2017-01-01",
+        "unit_price": 225000,
+        "photo": "books/the_lean_startup.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [3, 4]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 38,
+      "fields": {
+        "title": "Agent of P.A.W.S. (EDGE: Bandit Graphics)",
+        "description": "Jenny teams up with Detective Dog, Agent of P.A.W.S. (Police Animal Wagging Support) to battle the dastardly plans of villainous El Doggo. El Doggo is determined to become the leader of a new world order, one where dogs hold the leads ...\r\n\r\nThis title is part of the EDGE: Bandit Graphics series: individual, high-quality, safe, 32-page graphic novels written by New York Times bestselling author Tony Lee, suitable for readers aged 7+.",
+        "author_name": "Tony Lee, Wil Overton",
+        "publisher_name": "Franklin Watts",
+        "published_date": "2019-01-01",
+        "unit_price": 209700,
+        "photo": "books/agent_of_paws.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [2]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 39,
+      "fields": {
+        "title": "The Origin of Species",
+        "description": "Charles Darwin's classic that exploded into public controversy, revolutionized the course of science, and continues to transform our views of the world.\r\n\r\nFew other books have created such a lasting storm of controversy as The Origin of Species. Darwin's theory that species derive from other species by a gradual evolutionary process and that the average level of each species is heightened by the \"survival of the fittest\" stirred up popular debate to fever pitch. Its acceptance revolutionized the course of science.\r\n\r\nAs Sir Julian Huxley, the noted biologist, points out in his illuminating introduction, the importance of Darwin's contribution to modern scientific knowledge is almost impossible to evaluate: \"a truly great book, one which can still be read with profit by professional biologist.\"\r\n\r\nIncludes an Introduction by Sir Julian Huxley",
+        "author_name": "Charles Darwin",
+        "publisher_name": "New American Library",
+        "published_date": "2006-01-01",
+        "unit_price": 122000,
+        "photo": "books/the_origin_of_species.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [1, 3]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 40,
+      "fields": {
+        "title": "A Brief History of Time : From Big Bang to Black Holes",
+        "description": "Was there a beginning of time? Could time run backwards? Is the universe infinite or does it have boundaries? These are just some of the questions considered in an internationally acclaimed masterpiece by one of the world's greatest thinkers. It begins by reviewing the great theories of the cosmos from Newton to Einstein, before delving into the secrets which still lie at the heart of space and time, from the Big Bang to black holes, via spiral galaxies and strong theory. To this day A Brief History of Time remains a staple of the scientific canon, and its succinct and clear language continues to introduce millions to the universe and its wonders.",
+        "author_name": "Stephen Hawking",
+        "publisher_name": "Transworld Publishers Ltd",
+        "published_date": "2001-05-01",
+        "unit_price": 215000,
+        "photo": "books/history_of_time.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [1, 3, 9]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 41,
+      "fields": {
+        "title": "Sapiens: A Brief History of Humankind",
+        "description": "This is The Sunday Times Bestseller. Planet Earth is 4.5 billion years old. In just a fraction of that time, one species among countless others has conquered it. Us. We are the most advanced and most destructive animals ever to have lived. What makes us brilliant? What makes us deadly? What makes us Sapiens? In this bold and provocative book, Yuval Noah Harari explores who we are, how we got here and where we're going. Sapiens is a thrilling account of humankind's extraordinary history - from the Stone Age to the Silicon Age - and our journey from insignificant apes to rulers of the world. \"It tackles the biggest questions of history and of the modern world, and it is written in unforgettably vivid language. You will love it!\" (Jared Diamond, author of Guns, Germs and Steel).",
+        "author_name": "Yuval Noah Harari",
+        "publisher_name": "Vintage Publishing",
+        "published_date": "2015-05-01",
+        "unit_price": 311000,
+        "photo": "books/sapiens_history_of_humankind.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [1, 3, 9]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 42,
+      "fields": {
+        "title": "Các Triều Đại Việt Nam",
+        "description": "Dân tộc Việt Nam anh hùng đã trải qua hơn bốn ngàn năm lịch sử dựng nước và giữ nước. Với ý chí quật cường ông cha ta đã viết nên những trang sử vàng chói lói làm vẻ vang cho dân tộc ta, đất nước ta.\r\n\r\nQuá khứ và hiện tại, lịch sử và cảnh quan, thiên nhiên và con người hòa quyện nhau như đưa ta về cội nguồn ngàn năm bất khuất của dân tộc để tìm hiểu, để khám phá, để tin tưởng ở khí phách, tài trí, lòng yêu nước, tinh thần tự hào, tự tôn dân tộc, ý thức độc lập, tự chủ, tự lực, tự cường, truyển thống văn hiến và ý chí thống nhất đất nước của nhân dân ta.\r\n\r\nCuốn sách này sẽ giúp các bạn có dịp tìm hiểu sâu hơn nữa quá trình phát triển kế tiếp nhau của các triều đại, các ông vua bà chúa từ thời kì đầu dựng nước của các vua Hùng đến vị vua cuối cùng Bảo Đại.\r\n\r\nCác Triều Đại Việt Nam chắc chắn sẽ là cuốn cẩm nang lịch sử giúp mỗi người con dân tộc hiểu biết hơn về lịch sử Việt Nam để từ đó tự hào và quý trọng biết ơn công lao to lớn dựng nước giữ nước của ông cha ta.",
+        "author_name": "Quỳnh Cư, Đỗ Đức Hùng",
+        "publisher_name": "NXB Thanh Niên",
+        "published_date": "2021-01-01",
+        "unit_price": 120000,
+        "photo": "books/cac_trieu_dai_viet_nam.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [3, 9]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 43,
+      "fields": {
+        "title": "Sample Book - Copy 16",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_8Akrdap.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 44,
+      "fields": {
+        "title": "Sample Book - Copy 17",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 45,
+      "fields": {
+        "title": "Sample Book - Copy 18",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 46,
+      "fields": {
+        "title": "Sample Book - Copy 19",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 47,
+      "fields": {
+        "title": "Sample Book - Copy 20",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 48,
+      "fields": {
+        "title": "Sample Book - Copy 21",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 49,
+      "fields": {
+        "title": "Sample Book - Copy 22",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 50,
+      "fields": {
+        "title": "Sample Book - Copy 23",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 51,
+      "fields": {
+        "title": "Sample Book - Copy 24",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 52,
+      "fields": {
+        "title": "Sample Book - Copy 25",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 53,
+      "fields": {
+        "title": "Sample Book - Copy 26",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 54,
+      "fields": {
+        "title": "Sample Book - Copy 27",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 55,
+      "fields": {
+        "title": "Sample Book - Copy 28",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 56,
+      "fields": {
+        "title": "Sample Book - Copy 29",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 57,
+      "fields": {
+        "title": "Sample Book - Copy 30",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 58,
+      "fields": {
+        "title": "Sample Book - Copy 31",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 59,
+      "fields": {
+        "title": "Sample Book - Copy 32",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 60,
+      "fields": {
+        "title": "Sample Book - Copy 33",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 61,
+      "fields": {
+        "title": "Sample Book - Copy 34",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 62,
+      "fields": {
+        "title": "Sample Book - Copy 35",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 63,
+      "fields": {
+        "title": "Sample Book - Copy 36",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 64,
+      "fields": {
+        "title": "Sample Book - Copy 37",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 65,
+      "fields": {
+        "title": "Sample Book - Copy 38",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 66,
+      "fields": {
+        "title": "Sample Book - Copy 39",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 67,
+      "fields": {
+        "title": "Sample Book - Copy 40",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 68,
+      "fields": {
+        "title": "Sample Book - Copy 41",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 69,
+      "fields": {
+        "title": "Sample Book - Copy 42",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    },
+    {
+      "model": "books.book",
+      "pk": 70,
+      "fields": {
+        "title": "Sample Book - Copy 43",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nPhasellus varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nDonec auctor, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Nullam in velit nec augue fermentum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.\r\n\r\nAenean varius, lorem quis aliquam tincidunt, nunc nunc lacinia nunc, nec tincidunt nisi nunc vel nunc. Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed euismod, nunc vel bibendum malesuada, nisi urna lacinia nunc, nec tincidunt nisi nunc vel nunc.",
+        "author_name": "Sample Author",
+        "publisher_name": "Sample Publisher",
+        "published_date": "2024-01-01",
+        "unit_price": 10000,
+        "photo": "books/book_image_lBh8WTf.png",
+        "page_count": 200,
+        "isbn": "9781234567897",
+        "dimensions": "1.5 x 17.7 x 21.5 cm",
+        "weight": 200.0,
+        "rating_count": 0,
+        "rating_value": 0.0,
+        "categories": [8]
+      }
+    }
+  ]

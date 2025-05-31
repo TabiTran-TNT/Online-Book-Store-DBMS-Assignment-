@@ -1,0 +1,86 @@
+{% load static i18n %}
+{% load allauth account %}
+
+<div class="modal fade"
+     id="login"
+     data-bs-backdrop="static"
+     data-bs-keyboard="false"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="loginTitle"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" id="loginModalHeader">
+        <h5 class="modal-title fw-bolder fs-3" id="loginTitle">SIGN IN</h5>
+        <div class="container text-center d-none" id="checkoutLoginTitle">
+          <img src="{% static 'images/app_icon.png' %}"
+               alt="Logo"
+               width="80"
+               height="80" />
+          <div class="lobster-font fs-1">Please sign in</div>
+        </div>
+        <div class="container text-center d-none" id="cartExpireTitle">
+          <img src="{% static 'images/app_icon.png' %}"
+               alt="Logo"
+               width="80"
+               height="80" />
+          <div class="lobster-font fs-1">Time's up</div>
+        </div>
+        <div class="container text-center d-none" id="reviewLoginTitle">
+          <img src="{% static 'images/app_icon.png' %}"
+               alt="Logo"
+               width="80"
+               height="80" />
+          <div class="lobster-font fs-1">Be a member</div>
+        </div>
+        <button type="button"
+                class="btn-close btn-sm rounded-circle opacity-100"
+                id="closeButtonLogin"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+        <button type="button"
+                class="btn-close btn-sm rounded-circle opacity-100 checkout-login-close cart-expire-close review-login-close d-none"
+                id="checkoutCloseButtonLogin"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        {% url 'account_login' as login_url %}
+        {% element form form=login_form method="post" action=login_url tags="entrance,login" %}
+        {% slot body %}
+        {% csrf_token %}
+        <p class="fw-bold mb-0 d-none" id="checkoutMessage1">Only signed member can checkout.</p>
+        <p class="fw-bold mb-2 d-none" id="checkoutMessage2">Please sign in or sign up.</p>
+        <p class="fw-bold mb-2 d-none" id="checkoutMessage3">
+          Your cart will be expired soon, please log in to save your cart
+        </p>
+        <p class="fw-bold mb-2 d-none" id="checkoutMessage4">You have to be a member to review. Please sign in or sign up</p>
+        {% element fields form=login_form unlabeled=True %}
+      {% endelement %}
+      {{ redirect_field }}
+      <input type="hidden"
+             name="next"
+             id="nextInput"
+             value="{{ request.get_full_path }}" />
+    {% endslot %}
+  {% endelement %}
+</div>
+<div class="modal-footer border-0">
+  <div class="container-fluid border-top">
+    <div class="row align-item-center">
+      <div class="col-7">NOT A MEMBER?</div>
+      <div class="col-5">
+        <div class="d-flex justify-content-end signup">
+          <a class="btn btn-primary"
+             data-bs-target="#signUp"
+             data-bs-toggle="modal"
+             id="sign-up-access">SIGN UP</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>

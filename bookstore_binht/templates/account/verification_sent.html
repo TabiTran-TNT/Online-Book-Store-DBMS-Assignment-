@@ -1,0 +1,46 @@
+{% load static i18n %}
+{% load allauth account %}
+
+<div class="modal fade"
+     id="accountActivateModal"
+     tabindex="-1"
+     aria-labelledby="accountActivateModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" id="activateModalHeader">
+        <h5 class="modal-title fw-bolder" id="accountActivateModalLabel">ACCOUNT ACTIVATE</h5>
+        <div class="container text-center d-none" id="verificationLoginTitle">
+          <img src="{% static 'images/app_icon.png' %}"
+               alt="Logo"
+               width="80"
+               height="80" />
+          <div class="lobster-font fs-1">Please activate</div>
+        </div>
+        <button type="button"
+                class="btn-close rounded-circle opacity-100"
+                id="closeButtonAccountActivate1"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+        <button type="button"
+                class="d-none btn-close btn-sm rounded-circle opacity-100 verification-login-close"
+                id="closeButtonAccountActivate2"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+      <div class="modal-body fs-6">
+        <!-- The content will be updated dynamically via JavaScript -->
+      </div>
+      <div class="modal-footer border-0 mb-0 justify-content-start">
+        <div class="container-fluid d-flex justify-content-center py-0 my-2">
+          <button type="button"
+                  class="btn custom-button mb-2"
+                  onclick="window.location.href='https://mail.google.com'">GO TO EMAIL</button>
+        </div>
+        <p class="fs-6 text-start">
+          Or continue <a href="#" class="text-primary" data-bs-dismiss="modal">shopping</a> without log in.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

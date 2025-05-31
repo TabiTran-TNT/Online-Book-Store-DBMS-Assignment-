@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+  {{ block.super }}
+  <link href="{% static 'css/button.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/stepper.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/payment.css' %}" rel="stylesheet" />
+{% endblock css %}
+{% block javascript %}
+  {{ block.super }}
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="{% static 'js/payment.js' %}"></script>
+  <script src="{% static 'js/payment_method.js' %}"></script>
+{% endblock javascript %}
+{% block main %}
+  <div class="mb-4 mt-n3 fw-bolder py-2 px-3 d-sm-none">PAYMENT & SHIPPING</div>
+{% endblock main %}
+{% block content %}
+  <div class="row d-flex justify-content-center my-0">
+    <div class="col-lg-10">
+      <div class="stepper d-none d-sm-flex">
+        <div class="step active">Check out</div>
+        <div class="step active">Payment</div>
+        <div class="step">Place orders</div>
+      </div>
+      <div class="mx-n4 mt-sm-n3 d-none d-sm-block">
+        <hr />
+      </div>
+      <div class="mb-0 mb-sm-3" name="payment-method">
+        <div class="row d-flex justify-content-center my-0">
+          <div class="col-lg-11">
+            <div class="h5 mb-lg-0">Payment method</div>
+          </div>
+        </div>
+        <div class="select-container px-sm-2 d-sm-none">
+          <select class="form-select" id="paymentSelect">
+            <option value="creditCard">Credit Card</option>
+            <option value="cash">Cash</option>
+          </select>
+        </div>
+        <div class="row d-flex justify-content-center my-0">
+          <div class="col-lg-10">
+            <div class="checkbox-container d-none d-sm-block px-sm-2 mt-sm-2">
+              <div class="row">
+                <div class="col-3">
+                  <label class="form-check-label readonly-color">
+                    Cash
+                    <input type="checkbox" class="form-check-input" value="cash" />
+                  </label>
+                </div>
+                <div class="col-3">
+                  <label class="form-check-label readonly-color">
+                    Credit Card
+                    <input type="checkbox" class="form-check-input" value="creditCard" />
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class=" d-none d-lg-block">
+          <hr />
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center my-1">
+        <div class="col-lg-10">
+          <form id="payment-form"
+                class="px-sm-2 mt-2"
+                data-stripe-publishable-key="{{ stripe_publishable_key }}"
+                data-client-secret="{{ client_secret }}"
+                data-checkout-data='{ "shipping_address": "{{ checkout_data.shipping_address }}", "zip_code": "{{ checkout_data.zip_code }}", "city": "{{ checkout_data.city }}", "country": "{{ checkout_data.country }}" }'
+                data-csrf-token="{{ csrf_token }}"
+                data-payment-status-url="{{ domain }}{% url 'order:payment_status' %}"
+                data-zip-code="true">
+            <div id="payment-element">
+              <!--Stripe.js injects the Payment Element-->
+            </div>
+            <div class="row mt-4 mx-sm-n4">
+              <hr />
+              <div class="col-6 d-flex justify-content-end">
+                <a class="btn blue-button" href="{% url 'order:checkout' %}">Back</a>
+              </div>
+              <div class="col-6">
+                <button type="submit" class="btn orange-button" id="cardPlaceOrderButton">Place Order</button>
+              </div>
+            </div>
+            <div id="error-message">
+              <!-- Error messages -->
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="cash-form" class="d-none">
+        <hr class="my-4 mt-lg-0 mx-n3 px-0 d-lg-none" />
+        <div class="row d-flex justify-content-center my-0">
+          <div class="col-lg-11">
+            <div class="h5">Billing address</div>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center my-0">
+          <div class="col-lg-10">
+            <form method="post" action="{% url 'order:cash_payment' %}" class="px-sm-2">
+              {% csrf_token %}
+              <p>{{ checkout_data.shipping_address }} {{ checkout_data.city }} {{ checkout_data.country }}</p>
+              <p class="fw-bold mb-0">ZIP Code</p>
+              <p>{{ checkout_data.zip_code }}</p>
+              <p class="fw-bold mb-0">Phone no.</p>
+              <p>{{ checkout_data.phone }}</p>
+              <hr class="mx-n4" />
+              <div class="row mt-4 mb-3">
+                <div class="col-6 d-flex justify-content-end">
+                  <a class="btn blue-button" href="{% url 'order:checkout' %}">BACK</a>
+                </div>
+                <div class="col-6">
+                  <button type="submit" class="btn orange-button" id="placeOrderButton">PLACE ORDER</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

@@ -1,0 +1,308 @@
+{% extends "base.html" %}
+
+{% load static i18n rounding_filters %}
+{% load book_tags %}
+
+{% block css %}
+  {{ block.super }}
+  <link href="{% static 'css/homepage.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/comment_modal.css' %}" rel="stylesheet" />
+{% endblock css %}
+{% block javascript %}
+  {{ block.super }}
+  <script src="{% static 'js/book_detail.js' %}"></script>
+  <script src="{% static 'js/add_comment.js' %}"></script>
+  <script src="{% static 'js/book_comment.js' %}"></script>
+  <script src="{% static 'js/login_review.js' %}"></script>
+{% endblock javascript %}
+{% block content %}
+  <div class="row">
+    <div class="col-lg-2 border-end border-3 d-none d-lg-block pe-1">
+      <div class="h5">Categories</div>
+      <div class="list-group" name="category-list">
+        <a href="{% url 'home' %}"
+           class="list-group-item border-0 rounded-0 list-group-item-action {% if selected_category is None %}active{% endif %}">
+          All Categories
+        </a>
+        {% for category in categories %}
+          <a href="{% url 'home' %}?category={{ category.id }}"
+             class="list-group-item border-0 rounded-0 list-group-item-action {% if selected_category == category.id %}active{% endif %}">
+            {{ category.name }}
+          </a>
+        {% endfor %}
+      </div>
+      <div class="h5">
+        {% if request.user.is_authenticated %}
+          {{ request.user.name }}
+        {% else %}
+          Guest User
+        {% endif %}
+      </div>
+      <div class="list-group">
+        {% if request.user.is_authenticated %}
+          <a href="{% url 'users:detail' request.user.pk %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action">My Profile</a>
+          <a href="#logout"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#logout">{% translate "Sign Out" %}</a>
+        {% else %}
+          <a href="#login"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#login">Sign in</a>
+          <a href="#signUp"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#signUp">Sign up</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="col-lg-10 container-fluid" name="book-detail">
+      <h5 class="text-break d-sm-none" name="book-title">{{ book.title }}</h5>
+      <div class="row justify-content-center justify-content-sm-start mb-1">
+        <img class="col-6 col-sm-4"
+             src="{{ book.get_photo_url }}"
+             alt="{{ book.title }}"
+             name="book-photo" />
+        <div class="col-sm-8">
+          <h5 class="text-break d-none d-sm-block" name="book-title">{{ book.title }}</h5>
+          <div class="d-none d-sm-block">
+            <div class="row align-items-center mb-1">
+              <div class="col-2">By:</div>
+              <div class="col-10" name="author-name">{{ book.author_name }}</div>
+            </div>
+            <div class="row align-items-center mb-1">
+              <div class="col-2">Price:</div>
+              <div class="col-10 price-button mt-0" name="button-price">
+                <form method="post">
+                  {% csrf_token %}
+                  <button class="btn custom-button add-to-cart"
+                          data-book-id="{{ book.id }}"
+                          type="button">
+                    <span class="price">{{ book.get_formatted_price }}</span>
+                    <span class="cart-icon mb-n3 pb-3">
+                      <i class="fas fa-shopping-cart"></i>
+                    </span>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="row align-items-center mb-1" name="book-rating">
+              <div class="col-2">Rate:</div>
+              <div class="col-10 d-flex align-items-center gap-1">
+                {% star_rating star_rating %} ({{ book.total_rating_count }})
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center mb-1 d-sm-none">
+        <div class="col-2">By:</div>
+        <div class="col-10" name="author-name">{{ book.author_name }}</div>
+      </div>
+      <div class="row align-items-center mb-1 d-sm-none">
+        <div class="col-2">Price:</div>
+        <div class="col-10 price-button mt-0" name="button-price">
+          <button class="btn custom-button" type="button" name="button-price">
+            <span class="price">{{ book.get_formatted_price }}</span>
+            <span class="cart-icon mb-n3 pb-3">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="row align-items-center mb-1 d-sm-none" name="book-rating">
+        <div class="col-2">Rate:</div>
+        <div class="col-10 d-flex align-items-center gap-1">
+          {% star_rating star_rating %} ({{ book.total_rating_count }})
+        </div>
+      </div>
+      <div class="mt-2 mx-n3 mx-lg-0">
+        <hr />
+      </div>
+      <div class="row">
+        <div class="fw-bold col-6 col-sm-2 col-lg-3 order-sm-1 text-lg-center">Description</div>
+        <div class="fw-bolder col-6 col-sm-1 d-lg-none order-sm-3 custom-color text-end">
+          <i id="description-icon" class="fas fa-chevron-down" type="button"></i>
+        </div>
+        <div id="descriptionCollapse"
+             class="book-detail-content col-sm-9 col-lg-9 order-sm-2">
+          <p class="line-clamp" id="book-description">{{ book.description }}</p>
+          <div id="read-more" class="custom-color d-none d-lg-block" type="button">read more...</div>
+        </div>
+      </div>
+      <div class="mt-2 mx-n3 mx-lg-0">
+        <hr />
+      </div>
+      <div class="row">
+        <div class="fw-bold col-sm-2 col-lg-3 text-lg-center">Book details</div>
+        <div class="col-sm-10 col-lg-9" name="book-detail">
+          <p class="mb-1 book-detail-content">
+            <span class="fw-bold">Paperback:</span>  {{ book.pages }} pages
+          </p>
+          <p class="mb-1 book-detail-content">
+            <span class="fw-bold">Publisher:</span> {{ book.publisher_name }}
+          </p>
+          <p class="mb-1 book-detail-content">
+            <span class="fw-bold">ISBN-10:</span> {{ book.isbn_10 }}
+          </p>
+          <p class="mb-1 book-detail-content">
+            <span class="fw-bold">Dimensions:</span> {{ book.dimensions }}
+          </p>
+          <p class="mb-1 book-detail-content">
+            <span class="fw-bold book-detail-content">Weight:</span> {{ book.weight }}
+          </p>
+          <p class="mb-1 book-detail-content">
+            <span class="fw-bold">Categories:</span>
+            {% for category in categories %}
+              {{ category.name }}
+              {% if not forloop.last %},{% endif %}
+            {% endfor %}
+          </p>
+        </div>
+      </div>
+      <div class="mt-2 mx-n3 mx-lg-0">
+        <hr />
+      </div>
+      <div class="row" name="book-review">
+        <div class="d-sm-flex justify-content-center my-0 align-items-center gap-1 custom-color fw-bold col-10 col-sm-2 col-lg-3 order-sm-1">
+          <div class="d-sm-none d-flex align-items-center gap-1">
+            <span class="me-1">{{ book.total_rating_count }} reviews</span> {% star_rating star_rating %}
+          </div>
+          <div class="row d-none d-sm-block">
+            <span class="fw-bold me-1 col-sm-12">{{ book.total_rating_count }} reviews</span>
+            <span class="col-sm-12 d-flex gap-1">{% star_rating star_rating %}</span>
+            <div class="col-lg-12 my-3 pe-0 comment-popup d-none d-lg-block">
+              <button type="button"
+                      id="{% if request.user.is_authenticated %}reviewButton1{% else %}loginReview1{% endif %}"
+                      class="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="{% if request.user.is_authenticated %}#ratingModal{% else %}#login{% endif %}">
+                Write a review
+              </button>
+            </div>
+          </div>
+        </div>
+        <a href="{% url 'books:book_comments' book.id %}"
+           class="fw-bolder col-2 col-sm-1 order-sm-3 custom-color text-end d-lg-none">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+        <div class="rating-distribution col-sm-9 order-sm-2">
+          {% for i in '54321'|make_list %}
+            <div class="row justify-content-center justify-content-sm-start align-items-center my-0">
+              <span class="stars d-flex d-sm-none justify-content-end justify-content-sm-start gap-1 col-3">
+                {% star_distribution i|add:"0" %}
+              </span>
+              <span class="stars d-flex d-none d-sm-block col-2">{{ i }} stars</span>
+              <div class="progress d-flex col-5 col-lg-3 border border-1 rounded-0 bg-white px-0">
+                <div class="progress-bar justify-content-sm-start"
+                     role="progressbar"
+                     style="width: {{ rating_distribution|get_item:i|default:0|divide:book.total_rating_count|multiply:100 }}%"
+                     aria-valuenow="{{ rating_distribution|get_item:i|default:0 }}"
+                     aria-valuemin="0"
+                     aria-valuemax="{{ book.total_rating_count }}"></div>
+              </div>
+              <span class="count col-1">({{ rating_distribution|get_item:i|default:0 }})</span>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% if book.total_rating_count > 0 %}
+        {% for comment in comments %}
+          <div class="row book-review-content justify-content-end d-none d-lg-flex">
+            <div class="col-9">
+              <div class="row">
+                <div class="col-3 fw-bold">{{ comment.author.name }}</div>
+                <span class="stars d-flex justify-content-start gap-1 col-3 my-1">{% star_distribution comment.rating %}</span>
+                <span class="stars d-flex justify-content-start gap-1 col-3 ">{{ comment.created|date:"d/m/Y" }}</span>
+                <p class="comment-content col-12 mt-2"
+                   data-comment-id="{{ forloop.counter }}">{{ comment.content }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="row book-review-content justify-content-end d-none d-lg-flex">
+          <div class="col-9">
+            <p>No comments yet.</p>
+          </div>
+        </div>
+      {% endif %}
+      <div class="row book-review-content justify-content-end d-none d-lg-flex">
+        <div class="col-9">
+          <a href="{% url 'books:book_comments' book.id %}"
+             class="custom-color no-underline fw-bold"
+             name="view-comments">View all {{ book.total_rating_count }} reviews</a>
+        </div>
+      </div>
+      <div class="mt-2 mx-n3 mx-lg-0">
+        <hr />
+      </div>
+      <div class="row justify-content-center mx-0">
+        <div class="col-6 d-flex justify-content-center">
+          <form method="post">
+            {% csrf_token %}
+            <button class="btn custom-button add-to-cart"
+                    data-book-id="{{ book.id }}"
+                    type="button">ADD TO CART</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade"
+       id="ratingModal"
+       data-bs-backdrop="static"
+       data-bs-keyboard="false"
+       tabindex="-1"
+       role="dialog"
+       aria-labelledby="ratingModalLabel"
+       aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bolder fs-3" id="ratingModalLabel">REVIEW</h5>
+          <button type="button"
+                  class="btn-close btn-sm rounded-circle opacity-100"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form method="post" action="{% url 'books:book_comments' book.id %}">
+            {% csrf_token %}
+            <div class="rating row justify-content-center mb-1">
+              <div class="col-2">
+                <i class="star far fa-star fs-2 text-center" data-value="1"></i>
+              </div>
+              <div class="col-2">
+                <i class="star far fa-star fs-2" data-value="2"></i>
+              </div>
+              <div class="col-2">
+                <i class="star far fa-star fs-2" data-value="3"></i>
+              </div>
+              <div class="col-2">
+                <i class="star far fa-star fs-2" data-value="4"></i>
+              </div>
+              <div class="col-2">
+                <i class="star far fa-star fs-2" data-value="5"></i>
+              </div>
+              {{ form.rating }}
+            </div>
+            <div class="mb-3">
+              <div class="form-group">{{ form.content.label_tag }} {{ form.content }}</div>
+            </div>
+            <div class="modal-footer border-0 justify-content-center comment-button mb-0 pb-0">
+              <button type="submit" class="btn btn-primary">ADD REVIEW</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    new CommentToggle();
+    new StarRating();
+    new DescriptionToggle();
+  </script>
+{% endblock content %}

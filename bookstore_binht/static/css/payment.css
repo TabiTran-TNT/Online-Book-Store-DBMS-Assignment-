@@ -1,0 +1,23 @@
+div.mb-4{
+    background-color: #2C98B3;
+    color: white;
+}
+
+.form-group input.form-control {
+    background-color: #C4E3EC !important;
+    border-radius: 0px !important;
+}
+
+.readonly-color {
+    color: #5ABCD2 !important;
+}
+
+.form-check-input {
+    border-radius: 0px !important;
+}
+
+input:checked {
+    border-color: #75BAD0!important;
+    background-color: #75BAD0 !important;
+    content: '' !important;
+}

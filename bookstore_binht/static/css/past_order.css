@@ -1,0 +1,21 @@
+div.mb-2 {
+    background-color: #2C98B3;
+    font-weight: 700 !important;
+    color: white;
+}
+
+hr.order-total-line{
+    color: black !important;
+}
+
+.purple-color{
+    color: #2C98B3;
+}
+
+.list-group-item.active {
+    background-color: #5ABCD3;
+}
+
+.list-group-item {
+    color: #5ABCD3;
+}

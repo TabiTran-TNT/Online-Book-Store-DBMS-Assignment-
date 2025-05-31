@@ -1,0 +1,18 @@
+// custom breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 660px,
+  lg: 960px,
+);
+
+$enable-negative-margins: true;
+
+$pagination-active-bg: #FFFFFF;
+$pagination-active-color: #000000;
+$link-color: #75BAD0;
+$pagination-border-width: 0px;
+$font-weight-bold: 500;
+
+
+// import bootstrap
+@import "node_modules/bootstrap/scss/bootstrap"

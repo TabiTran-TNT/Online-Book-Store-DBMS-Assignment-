@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+
+{% block css %}
+  {{ block.super }}
+  <link href="{% static 'css/button.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/stepper.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/payment_status.css' %}" rel="stylesheet" />
+{% endblock css %}
+{% block main %}
+  <div class="mb-4 mt-n3 fw-bolder py-2 px-3 d-sm-none">PLACE ORDER</div>
+{% endblock main %}
+{% block content %}
+  <div class="stepper d-none d-sm-flex">
+    <div class="step active">Check out</div>
+    <div class="step active">Payment</div>
+    <div class="step active">Place orders</div>
+  </div>
+  <div class="mx-n4 mt-sm-n3 d-none d-sm-block">
+    <hr />
+  </div>
+  <div id="message" class="text-sm-center">
+    <p class="mb-0 d-sm-none">Dear customer,</p>
+    {% if status == 'succeeded' %}
+      <p class="d-sm-none">Your order has been placed. Thank you for shopping with us.</p>
+      <p class="d-none d-sm-block fw-bold mb-0">Dear customer, your order has been placed.</p>
+      <p class="d-none d-sm-block fw-bold">Thank you for shopping with us.</p>
+    {% elif status == 'processing' %}
+      <p>Payment processing. We'll update you when payment is received.</p>
+    {% elif status == 'requires_payment_method' %}
+      <p>Payment failed. Please try another payment method.</p>
+    {% else %}
+      <p>Something went wrong. Please try again.</p>
+    {% endif %}
+  </div>
+  <div class="container-fluid d-flex justify-content-center">
+    <a class="btn orange-button" href="{% url 'home' %}" name="home-button">BACK TO SHOPPING</a>
+  </div>
+{% endblock content %}

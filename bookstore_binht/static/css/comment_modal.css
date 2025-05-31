@@ -1,0 +1,119 @@
+/* Modal css */
+
+  .modal-content{
+    border-radius: 0px;
+  }
+  .modal-header .btn-close {
+    margin-top: -4rem;
+    margin-right: -2rem;
+    background-color: white;
+  }
+
+  .modal-header {
+    background-color: #5396B0;
+    border-radius: 0px;
+    color: white;
+  }
+
+  .modal-footer .btn:hover {
+    background-color: #ec971f !important;
+  }
+
+  .modal .form-control::placeholder {
+    color: #C4E3EC !important;
+  }
+
+  .modal .form-control {
+    border-radius: 0px;
+  }
+
+  .modal .form-check-input{
+    border-radius: 0px;
+  }
+
+  .modal .form-group label {
+    font-weight: bold;
+  }
+
+  .modal .form-group .form-control {
+    background-color: #C4E3EC !important;
+  }
+
+  .modal .form-group:not(:first-of-type):not(.no-margin){
+    margin-top: 20px;
+  }
+
+  .modal-body {
+    font-size: 14px;
+  }
+
+  .modal-footer{
+    margin-top: 0px;
+    padding-top:0px;
+    font-size: 16px;
+  }
+
+  .modal-footer .col-7{
+    color: #58A9C5 !important;
+    font-weight: bold;
+  }
+
+  /* Button css */
+  .comment-button .btn-primary {
+    background-color: #F0AD4E !important; /* Orange button color */
+    border-radius: 0px !important;
+    color: white;
+    padding: 10px 17px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #DC913C;
+  }
+
+  .comment-popup .btn-primary {
+    background-color: #75BAD0 !important;
+    border-radius: 0px !important;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #5396B0;
+  }
+
+  .btn-close {
+    background: url("data:image/svg+xml,%3Csvg%20fill='%235396B0'%20height='161px'%20width='161px'%20version='1.1'%20id='Capa_1'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='-46.08%20-46.08%20552.93%20552.93'%20xml:space='preserve'%20stroke='%235396B0'%20stroke-width='46.0775'%3E%3Cg%20id='SVGRepo_bgCarrier'%20stroke-width='0'%3E%3C/g%3E%3Cg%20id='SVGRepo_tracerCarrier'%20stroke-linecap='round'%20stroke-linejoin='round'%3E%3C/g%3E%3Cg%20id='SVGRepo_iconCarrier'%3E%20%3Cpath%20d='M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55%20c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55%20c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505%20c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55%20l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719%20c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z'%3E%3C/path%3E%20%3C/g%3E%3C/svg%3E");
+    opacity: 1;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    outline: none;
+    display: inline-block;
+  }
+
+  /* Container CSS */
+  .modal-footer .container-fluid {
+    padding: 0px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    border-width: 3px;
+  }
+
+  .star{
+    color: #F0AD4E;
+  }
+
+  .custom-background{
+    background-color: #75BAD0 !important;
+  }
+
+  .alert-close-button{
+    margin-top: -10rem !important;
+    margin-right: -2rem !important;
+  }
+
+  .custom-modal-width{
+    width: 300px;
+  }

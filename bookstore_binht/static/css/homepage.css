@@ -1,0 +1,189 @@
+/* Custom class for 5 columns on large screens */
+@media (min-width: 960px) {
+    .col-lg-2-4 {
+      width: 20%;
+    }
+
+    .card{
+        border: none;
+        height: 350px !important;
+        width: 160px !important;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .card-body h5.card-title {
+        color: #64A2B9;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 14px !important;
+    }
+
+    .card-body p {
+        font-size: 14px !important;
+        margin-bottom: 8px;
+    }
+
+    .list-group-item.active {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: white;
+    }
+
+    .price-button{
+        margin-left: -4px;
+    }
+
+  }
+
+
+@media (min-width: 320px) {
+    .card{
+        border: none;
+        height: 180px;
+        width: 300px;
+    }
+
+    .card-body{
+        padding-top: 3px;
+    }
+
+    .card-body h5.card-title {
+        color: #64A2B9;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 1rem;
+    }
+    .card-body p {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .col-5[name="book-image"]{
+        padding-right: 0;
+    }
+
+    .col-7[name="book-info"]{
+        padding-left: 0;
+    }
+
+    .price-button{
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 660px){
+
+    h5.card-title {
+        overflow: hidden;
+        color: #64A2B9;
+        font-size: 1rem;
+        text-overflow: ellipsis;
+    }
+
+    .card{
+        border: none;
+        height: 180px;
+        width: 300px;
+    }
+
+    .card-body h5.card-title {
+        margin-bottom: 4px;
+    }
+    .card-body p {
+        margin-bottom: 4px;
+    }
+
+    .price-button{
+        margin-top: 70px;
+    }
+
+    .row .col-sm-6{
+        margin-bottom: 0;
+    }
+}
+
+.custom-button {
+    background-color: #EFAA5A;
+    color: white;
+    border: none;
+    border-radius: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 0 #DC913C;
+}
+
+.custom-button:hover {
+    background-color: #EFAA5A;
+    color: white;
+    transition: 0.5s;
+}
+
+.custom-button .cart-icon{
+    padding-left: 5px;
+    border-left: 1px solid white;
+    padding-top: 10px;
+    margin-top: -10px;
+
+}
+
+.custom-button .price{
+    padding-right: 5px;
+}
+
+.list-group{
+    margin-bottom: 15px;
+}
+
+.list-group-item{
+    color: #5ABCD3;
+}
+
+.list-group-item.active {
+    background-color: #5ABCD3;
+}
+
+hr {
+    border-top: 2px solid;
+}
+
+.custom-color {
+    color: #64A2B9;
+}
+
+.book-detail-content {
+    font-size: 13px;
+}
+
+.progress{
+    border-color: #EFAA5A !important;
+}
+
+.progress-bar{
+    background-color: #EFAA5A !important;
+}
+
+.line-clamp-5 {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+button.btn.btn-primary{
+    font-size: 16px;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+div.my-n3{
+    background-color: #2C98B3;
+    font-weight: 800 !important;
+    color: white;
+}

@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{% load static i18n %}
+{% load pagination_tags %}
+
+{% block css %}
+  {{ block.super }}
+  <link href="{% static 'css/checkout.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/pagination.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/past_order.css' %}" rel="stylesheet" />
+{% endblock css %}
+{% block javascript %}
+  {{ block.super }}
+  <script src="{% static 'js/order_toggle.js' %}"></script>
+{% endblock javascript %}
+{% block main %}
+  <div class="mb-2 mt-n3 py-2 px-3 d-lg-none">PAST ORDERS</div>
+{% endblock main %}
+{% block content %}
+  <div class="row">
+    <div class="col-lg-2 border-end border-3 d-none d-lg-block pe-1">
+      <div class="h5">Categories</div>
+      <div class="list-group mb-3" name="category-list">
+        <a href="{% url 'home' %}"
+           class="list-group-item border-0 rounded-0 list-group-item-action">All Categories</a>
+        {% for category in categories %}
+          <a href="{% url 'home' %}?category={{ category.id }}"
+             class="list-group-item border-0 rounded-0 list-group-item-action {% if selected_category == category.id %}active{% endif %}">
+            {{ category.name }}
+          </a>
+        {% endfor %}
+      </div>
+      <div class="h5">
+        {% if request.user.is_authenticated %}
+          {{ request.user.name }}
+        {% else %}
+          Guest User
+        {% endif %}
+      </div>
+      <div class="list-group">
+        {% if request.user.is_authenticated %}
+          <a href="{% url 'users:update' %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action">My Profile</a>
+          <a href="{% url 'order:order_history' %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action active">My past order</a>
+          <a href="{% url 'account_logout' %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action">Sign Out</a>
+        {% else %}
+          <a href="#login"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#login">Sign in</a>
+          <a href="#signup"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#signUp">Sign up</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="col-lg-10">
+      {% if orders %}
+        {% for order in orders %}
+          <div class="row mx-sm-0 ps-sm-1">
+            <div class="col-10 col-sm-11" name="order-date-{{ order.id }}">
+              <div class="purple-color fw-bold">{{ order.order_date|date:"d/m/Y" }}</div>
+            </div>
+            <div class="col-2 col-sm-1 d-sm-flex justify-content-sm-center my-0 text-end purple-color fw-bold"
+                 name="chevron-order-{{ order.id }}">
+              <i class="fas fa-chevron-down"
+                 id="order-icon-{{ order.id }}"
+                 data-order-id="{{ order.id }}"></i>
+            </div>
+          </div>
+          <div id="descriptionCollapse-{{ order.id }}"
+               class="description-collapse d-none">
+            <div class="row">
+              {% for item in order.items.all %}
+                <div class="row justify-content-end mx-0 mb-3 mb-sm-1"
+                     name="order-item-{{ item.id }}">
+                  <div class="col-12 col-sm-8 fw-bold line-clamp-2 mb-1 mb-sm-0 px-0 ps-sm-3">{{ item.book.title }}</div>
+                  <div class="col-3 me-1 me-sm-0 mt-0 mb-3 border border-1 black-border d-flex justify-content-center">
+                    {{ item.book.get_formatted_price }}
+                  </div>
+                  <div class="col-1 mt-0 mb-3 border border-1 black-border d-flex justify-content-center ">{{ item.quantity }}</div>
+                  <div class="d-none d-sm-block ps-sm-3 pe-sm-0">
+                    <hr />
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+            <div class="mt-n4 pt-0 mb-1 order-total-line d-sm-none">
+              <hr />
+            </div>
+            <div class="row justify-content-end mx-0">
+              <div class="col-7 fw-bold pe-0 pe-sm-3 ps-sm-0">Total</div>
+              <div class="col-3 me-1 ms-sm-3 my-0 border border-1 black-border-total d-flex  justify-content-center">
+                {{ order.get_formatted_total_price }}
+              </div>
+              <div class="col-1 my-0 border border-1 black-border-total d-flex justify-content-center ">
+                {{ order.items.count }}
+              </div>
+            </div>
+          </div>
+          <div class="my-1">
+            <hr />
+          </div>
+        {% endfor %}
+        <div class="row d-flex justify-content-end mb-lg-3">
+          <div class="col-12 col-lg-10">
+            <div class="row d-flex justify-content-center my-0">
+              <div class="col-12 col-lg-10 ps-0 row">
+                {% if is_paginated %}
+                  <nav aria-label="Page navigation"
+                       class="mt-n2 mt-sm-0 mb-2 col-12 col-lg-6">
+                    <ul class="pagination justify-content-center justify-content-lg-start d-sm-flex mb-0 mt-0">
+                      {% render_page_link page_obj 'first' sm_display=True request=request %}
+                      {% render_page_link page_obj 'previous' sm_display=True request=request %}
+                      {% for page_number in elided_page_range %}
+                        {% if page_number == page_obj.paginator.ELLIPSIS %}
+                          <li class="page-item disabled">
+                            <span class="page-link">...</span>
+                          </li>
+                        {% else %}
+                          <li class="page-item {% if page_number == page_obj.number %}active{% endif %}">
+                            <a class="page-link"
+                               href="?{% for key,value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_number }}">{{ page_number }}</a>
+                          </li>
+                        {% endif %}
+                      {% endfor %}
+                      {% render_page_link page_obj 'next' sm_display=True request=request %}
+                      {% render_page_link page_obj 'last' sm_display=True request=request %}
+                    </ul>
+                    <ul class="pagination justify-content-center d-flex d-sm-none my-0">
+                      {% render_page_link page_obj 'first' sm_display=False request=request %}
+                      {% render_page_link page_obj 'previous' sm_display=False request=request %}
+                      {% render_page_link page_obj 'next' sm_display=False request=request %}
+                      {% render_page_link page_obj 'last' sm_display=False request=request %}
+                    </ul>
+                  </nav>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% else %}
+        <p>You have no past orders.</p>
+      {% endif %}
+    </div>
+  </div>
+{% endblock content %}

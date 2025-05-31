@@ -1,0 +1,259 @@
+{% load static i18n %}
+{% load allauth account %}
+
+<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}
+<html lang="{{ LANGUAGE_CODE }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      {% block title %}
+        Bookstore BinhT
+      {% endblock title %}
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bookstore assignment" />
+    <meta name="author" content="Binh Tran" />
+    <link rel="icon" href="{% static 'images/favicons/favicon.ico' %}" />
+    {% block css %}
+      <!-- Latest custom compiled and minified Bootstrap CSS -->
+      <link href="{% static 'css/bootstrapv5.2.3.min.css' %}" rel="stylesheet" />
+      <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+      <!-- Your stuff: Third-party CSS libraries go here -->
+      <!-- This file stores project-specific CSS -->
+      <link href="{% static 'css/header.css' %}" type="text/css" rel="stylesheet" />
+      <link href="{% static 'css/base.css' %}" type="text/css" rel="stylesheet" />
+      <link href="{% static 'css/button.css' %}" type="text/css" rel="stylesheet" />
+      <!-- Option 1: Include in HTML -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+            rel="stylesheet" />
+      <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+      <link href="{% static 'css/base.css' %}" rel="stylesheet" />
+      <link href="{% static 'css/authentication.css' %}"
+            type="text/css"
+            rel="stylesheet" />
+    {% endblock css %}
+    <!-- Le javascript
+    ================================================== -->
+    {# Placed at the top of the document so pages load faster with defer #}
+    {% block javascript %}
+      <!-- Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+              integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+              crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+              integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+              crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="{% static 'js/signup.js' %}"></script>
+      <script src="{% static 'js/password_reset.js' %}"></script>
+    {% endblock javascript %}
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+          rel="stylesheet" />
+  </head>
+  <body class="{% block bodyclass %}{% endblock bodyclass %}">
+    {% block body %}
+      <div class="mb-3">
+        <nav class="navbar navbar-expand-lg navbar-dark py-0">
+          <div class="container-fluid pe-1">
+            <a class="navbar-brand navbar-text"
+               href="{% url 'home' %}"
+               name="home-logo">
+              <img src="{% static 'images/app_icon.png' %}"
+                   alt="Logo"
+                   width="50"
+                   height="50" />
+              <span class="lobster-font">In Betweener</span>
+            </a>
+            <div class="navbar-nav d-none d-sm-flex ms-auto">
+              <form id="searchForm"
+                    class="mb-0 mt-0 bg-white search-form"
+                    method="get"
+                    action="{% url 'home' %}">
+                <div class="input-group">
+                  <select class="d-none d-lg-block m-1" name="category">
+                    <option value="">All Categories</option>
+                    {% for category in categories %}
+                      <option value="{{ category.id }}"
+                              {% if selected_category == category.id %}selected{% endif %}>
+                        {{ category.name }}
+                      </option>
+                    {% endfor %}
+                  </select>
+                  <input type="text"
+                         class="form-control rounded-0 border-0"
+                         name="search"
+                         placeholder="Search..."
+                         value="{{ search_query }}" />
+                  <button class="btn btn-light rounded-0 border-0" type="submit">
+                    <i class="bi bi-search d-lg-none"></i>
+                    <span class="d-none d-lg-inline">Go</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="navbar-nav ms-auto">
+              <a class="btn navbar-item border-0 me-2 pe-2"
+                 href="{% url 'cart:cart_detail' %}"
+                 name="cart-icon">
+                <i class="bi bi-cart2 position-relative ">
+                  {% if cart_total_items > 0 %}
+                    <span class="position-absolute top-0 start-100 translate-middle-x rounded-circle badge bg-warning py-1 px-1"
+                          name="cart-icon-total-items">{{ cart_total_items }}</span>
+                  {% endif %}
+                </i>
+              </a>
+            </div>
+            <button class="navbar-toggler border-0 border-start border-2 pe-0 me-sm-2 ps-sm-2"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+              <i class="bi bi-list d-flex"></i>
+            </button>
+            <div class="navbar-nav d-flex border-start border-2 ps-2 ps-lg-0">
+              <ul class="navbar-nav d-none d-sm-block ps-2 ps-lg-0">
+                {% if request.user.is_authenticated %}
+                  <li class="nav-item dropdown py-0">
+                    <button type="button"
+                            name="user-info"
+                            class="btn nav-link nav-item py-0 pe-0"
+                            data-bs-toggle="dropdown">
+                      <i class="bi bi-person icon-large"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end position-absolute">
+                      <li>
+                        <a class="dropdown-item" href="{% url 'users:update' %}">{% translate "My Profile" %}</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item"
+                           href="{% url 'order:order_history' %}"
+                           name="order-history-dropdown">{% translate "My past order" %}</a>
+                      </li>
+                      <li>
+                        <a id="log-out-link"
+                           class="dropdown-item"
+                           href="#logout"
+                           data-bs-toggle="modal"
+                           data-bs-target="#logout">{% translate "Sign Out" %}</a>
+                      </li>
+                    </ul>
+                  </li>
+                {% else %}
+                  <li class="nav-item">
+                    <a id="log-in-link"
+                       class="nav-link pe-0"
+                       href="#login"
+                       data-bs-toggle="modal"
+                       data-bs-target="#login">{% translate "SIGN IN" %}</a>
+                  </li>
+                {% endif %}
+              </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="navbar-nav d-sm-none">
+                <form class="mb-0 mt-2" method="get" action="{% url 'home' %}">
+                  <div class="input-group">
+                    <input type="text"
+                           class="form-control rounded-0"
+                           placeholder="Search..."
+                           name="search"
+                           value="{{ search_query }}" />
+                    {% if selected_category %}<input type="hidden" name="category" value="{{ selected_category }}" />{% endif %}
+                  </div>
+                </form>
+              </div>
+              <div class="navbar-nav d-lg-none">
+                <div class="nav-item" name="collapse-title">BROWSE</div>
+                <ul class="navbar-nav row" name="collapse-list">
+                  <li class="nav-item col-sm-4">
+                    <a href="{% url 'home' %}"
+                       class="nav-link {% if selected_category is None %}active{% endif %}">All Categories</a>
+                  </li>
+                  {% for category in categories %}
+                    <li class="nav-item col-sm-4">
+                      <a href="{% url 'home' %}?category={{ category.id }}"
+                         class="nav-link {% if selected_category == category.id %}active{% endif %}">
+                        {{ category.name }}
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+              {% if request.user.is_authenticated %}
+                <div class="nav-item d-sm-none" name="collapse-title">{{ request.user.name| upper }}</div>
+              {% else %}
+                <div class="nav-item d-sm-none" name="collapse-title">GUEST USER</div>
+              {% endif %}
+              <ul class="navbar-nav d-sm-none" name="collapse-list">
+                {% if request.user.is_authenticated %}
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'users:detail' request.user.pk %}">{% translate "My Profile" %}</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'order:order_history' %}">{% translate "My past order" %}</a>
+                  </li>
+                  <li class="nav-item">
+                    {# URL provided by django-allauth/account/urls.py #}
+                    <a id="log-out-link"
+                       class="nav-link"
+                       href="#logout"
+                       data-bs-toggle="modal"
+                       data-bs-target="#logout">{% translate "Sign Out" %}</a>
+                  </li>
+                {% else %}
+                  <li class="nav-item">
+                    {# URL provided by django-allauth/account/urls.py #}
+                    <a id="log-in-link"
+                       class="nav-link"
+                       href="#login"
+                       data-bs-toggle="modal"
+                       data-bs-target="#login">{% translate "Sign In" %}</a>
+                  </li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      {% block main %}
+      {% endblock main %}
+      <div class="container-fluid px-3">
+        {% if messages %}
+          {% for message in messages %}
+            <div class="alert alert-dismissible django-message {% if message.tags == 'error' %}alert-{{ message.tags }} d-none {% else %} alert-{{ message.tags }} {% endif %}">
+              {{ message }}
+              <button type="button"
+                      class="btn-close"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"></button>
+            </div>
+          {% endfor %}
+        {% endif %}
+        {% block content %}
+        {% endblock content %}
+      </div>
+    {% endblock body %}
+    <!-- /container -->
+    {% block modal %}
+      <!-- Modal -->
+      {% include "account/login.html" %}
+      {% include "account/signup.html" %}
+      {% include "account/logout.html" %}
+      {% include "account/verification_sent.html" %}
+      {% include "account/password_reset.html" %}
+      {% include "account/password_reset_done.html" %}
+    {% endblock modal %}
+  </body>
+  <script src="{% static 'js/login.js' %}"></script>
+  <script>
+    new SignUp()
+  </script>
+  <script src="{% static 'js/cart_manager.js' %}"></script>
+</html>

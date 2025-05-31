@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% load static i18n rounding_filters %}
+
+{% block css %}
+  {{ block.super }}
+  <link href="{% static 'css/checkout.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/stepper.css' %}" rel="stylesheet" />
+{% endblock css %}
+{% block main %}
+  <div class="mb-2 mt-n3 fw-bolder py-2 px-3 d-sm-none">CHECK OUT</div>
+{% endblock main %}
+{% block content %}
+  <div class="container mt-3 mt-sm-0 px-1">
+    <div class="stepper d-none d-sm-flex">
+      <div class="step active">Check out</div>
+      <div class="step">Payment</div>
+      <div class="step">Place orders</div>
+    </div>
+    <div class="mx-n4 mt-sm-n3 d-none d-sm-block">
+      <hr />
+    </div>
+    <div class="container-sm px-0 px-sm-4">
+      <div class="h5">Shipping address</div>
+      <div class="container-sm px-0 px-sm-4">
+        <form method="post">
+          {% csrf_token %}
+          <div class="form-group mb-3 d-sm-none">
+            <label class="fw-bold mb-1" for="id_full_name">Full name</label>
+            <input type="text"
+                   name="full_name"
+                   class="form-control readonly-color"
+                   id="id_full_name"
+                   value="{{ full_name }}"
+                   readonly />
+          </div>
+          <div class="row mb-3 d-none d-sm-flex">
+            <div class="col-sm-6 form-group mb-3 mb-sm-0">
+              <label class="fw-bold mb-1" for="id_first_name">First name</label>
+              <input type="text"
+                     name="first_name"
+                     class="form-control readonly-color"
+                     id="id_first_name"
+                     value="{{ first_name }}"
+                     readonly />
+            </div>
+            <div class="col-sm-6 form-group">
+              <label class="fw-bold mb-1" for="id_last_name">Last name</label>
+              <input type="text"
+                     name="last_name"
+                     class="form-control readonly-color"
+                     id="id_last_name"
+                     value="{{ last_name }}"
+                     readonly />
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label class="fw-bold mb-1" for="id_shipping_address">Address</label>
+            {{ form.shipping_address }}
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-6 mb-3">
+              <label class="fw-bold mb-1" for="id_city">City</label>
+              {{ form.city }}
+            </div>
+            <div class="form-group col-sm-6 mb-3">
+              <label class="fw-bold mb-1" for="id_zip_code">ZIP code</label>
+              {{ form.zip_code }}
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-6 mb-3">
+              <label class="fw-bold mb-1" for="id_country">Country</label>
+              {{ form.country }}
+            </div>
+            <div class="form-group col-sm-6">
+              <label class="fw-bold mb-1" for="id_phone">Phone no.</label>
+              <input type="text"
+                     name="phone"
+                     class="form-control readonly-color"
+                     id="id_phone"
+                     value="{{ phone }}"
+                     readonly />
+            </div>
+          </div>
+          <div class="mt-2 mx-n3">
+            <hr />
+          </div>
+          <div class="h5">Confirm your orders</div>
+          {% for item in cart_items %}
+            <div class="row justify-content-end mx-0 mb-3 mb-sm-1">
+              <div class="col-12 col-sm-8 fw-bold line-clamp-2 mb-1 mb-sm-0 px-0 ps-sm-3">{{ item.book.title }}</div>
+              <div class="col-3 me-1 me-sm-0 my-0 border border-1 black-border d-flex justify-content-center">
+                {{ item.book.get_formatted_price }}
+              </div>
+              <div class="col-1 my-0 border border-1 black-border d-flex justify-content-center ">{{ item.quantity }}</div>
+              <div class="d-none d-sm-block ps-sm-3 pe-sm-0">
+                <hr />
+              </div>
+            </div>
+          {% endfor %}
+          <div class="mt-2 d-sm-none">
+            <hr />
+          </div>
+          <div class="row justify-content-end mx-0">
+            <div class="col-7 fw-bold pe-0 pe-sm-3 ps-sm-0">Total</div>
+            <div class="col-3 me-1 ms-sm-3 my-0 border border-1 black-border-total d-flex  justify-content-center">
+              {{ total_price }}
+            </div>
+            <div class="col-1 my-0 border border-1 black-border-total d-flex justify-content-center ">{{ cart_total_items }}</div>
+          </div>
+          <div class="mt-2 mx-n4">
+            <hr />
+          </div>
+          <div class="row mb-4">
+            <div class="col-6 d-flex justify-content-end pe-1">
+              <a href="{% url 'cart:cart_detail' %}" class="btn back-button">BACK</a>
+            </div>
+            <div class="col-6 d-flex justify-content-start ps-1">
+              <button type="submit" class="btn proceed-button" id="proceedButton">PROCEED</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

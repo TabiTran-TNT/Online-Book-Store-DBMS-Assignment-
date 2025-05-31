@@ -1,0 +1,95 @@
+{% load i18n %}
+{% load allauth account %}
+
+{% if attrs.form.password1 %}
+  {% for field in attrs.form %}
+    <div class="form-group">
+      {% if field == attrs.form.password1 %}
+        <label for="id_password1">Password</label>
+        <div class="row">
+          <div class="col">{{ attrs.form.password1 }}</div>
+          <div class="col">{{ attrs.form.password2 }}</div>
+        </div>
+        <div class="align-middle alert d-none" id="password1">Your password must be at least 6 characters.</div>
+        <div class="align-middle alert d-none" id="password2">You must type the same password each time.</div>
+      {% elif field != attrs.form.password2 and field != attrs.form.birth_day and field != attrs.form.birth_year and field != attrs.form.birth_month %}
+        {{ field.label_tag }} {{ field }}
+        {% if field == attrs.form.email %}
+          <div class=" align-middle alert d-none" id="email">Enter a valid email address.</div>
+          <div class=" align-middle alert d-none" id="email-used">A user is already registered with this email address.</div>
+        {% else %}
+          <div class=" align-middle alert d-none" id="phone">Invalid phone number.</div>
+        {% endif %}
+      {% endif %}
+    </div>
+  {% endfor %}
+  <div class="form-group">
+    <label for="id_birthday">Birthday (DD/MM/YYYY)</label>
+    <div class="row">
+      <div class="col">{{ attrs.form.birth_day }}</div>
+      <div class="col">{{ attrs.form.birth_month }}</div>
+      <div class="col">{{ attrs.form.birth_year }}</div>
+    </div>
+    <div class="align-middle alert d-none" id="birth_year">Invalid date.</div>
+  </div>
+{% else %}
+  <div class="form-group">
+    <label for="id_login">User name</label>
+    {{ attrs.form.login }}
+  </div>
+  <div class="form-group">
+    <label for="id_password">Password</label>
+    {{ attrs.form.password }}
+    <div id="login-error" class="align-middle alert d-none">Invalid username and/or password</div>
+  </div>
+  <div class="form-group d-none" id="captcha-container">
+    <label for="id_captcha">Captcha</label>
+    <div class="row">
+      <div class="col-6">
+        <input type="hidden"
+               name="captcha_0"
+               value="{{ captcha_key }}"
+               class="form-control"
+               id="id_captcha_0"
+               autocomplete="off" />
+        <input type="text"
+               name="captcha_1"
+               class="form-control"
+               id="id_captcha_1"
+               autocapitalize="off"
+               autocomplete="off"
+               autocorrect="off"
+               spellcheck="false" />
+      </div>
+      <div class="col-6 d-flex justify-content-center my-0">
+        <img src="{{ captcha_image }}" alt="captcha" class="captcha" />
+      </div>
+    </div>
+    <div id="captcha-error" class="align-middle alert d-none">Invalid captcha</div>
+  </div>
+  <div class="form-group">
+    <div class="row">
+      <div class="col-7">
+        <div class="div">
+          <label for="id_remember">Remember me</label>
+          {{ attrs.form.remember }}
+        </div>
+        <div>
+          <a href="#"
+             data-bs-target="#resetPass"
+             data-bs-toggle="modal"
+             id="password-reset-access">Forgot your password</a>
+        </div>
+      </div>
+      <div class="col-5">
+        <div class="d-flex justify-content-end signin">
+          {% slot actions %}
+          {% element button tags="prominent,login" type="submit" %}
+          {% trans "SIGN IN" %}
+        {% endelement %}
+      {% endslot %}
+    </div>
+  </div>
+</div>
+</div>
+{% endif %}

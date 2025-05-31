@@ -1,0 +1,101 @@
+/* These styles are generated from project.scss. */
+
+/* Alert css */
+.alert-debug {
+  color: black;
+  background-color: white;
+  border-color: #d6e9c6;
+}
+
+.alert-error {
+  color: #b94a48;
+  background-color: #f2dede;
+  border-color: #eed3d7;
+}
+
+/* Navigation bar css */
+nav{
+  padding-left: 5px;
+  color: white;
+}
+
+.navbar {
+  min-height: 60px;
+  background-color: #75BAD0;
+}
+
+.navbar-brand {
+  font-size: 25px;
+  padding: 0;
+}
+
+.navbar-toggler {
+  font-size: 2rem;
+  border-radius: 0 !important;
+}
+
+a.navbar-item{
+  font-size: 2rem;
+  background: #75BAD0;
+  color: white;
+  padding: 0 10px 0 0;
+}
+
+a.navbar-item{
+  font-size: 2rem;
+  background: #75BAD0;
+  color: white;
+  padding: 0 15px 0 0;
+  border-radius: 0 !important;
+}
+
+.navbar-collapse{
+  flex-grow: 0;
+}
+
+.lobster-font {
+  font-family: 'Lobster', cursive;
+  color: white;
+}
+
+.bi .bi-cart .icon-cart .nav-item {
+  border-right: 1px solid white;
+  padding-right: 5px;
+  flex-grow: 0;
+}
+
+.position-absolute{
+  font-size: 12px;
+}
+
+@media (min-width: 320px){
+  .navbar-nav[name="collapse-list"]{
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+    border-top: 1px solid white;
+  }
+
+  .nav-item[name="collapse-title"]{
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .navbar-nav[name="collapse-list"] .nav-item{
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 660px){
+  .navbar-nav[name="collapse-list"]{
+    flex-direction: row;
+    padding-left: 15px;
+    margin: 0;
+    border-top: 1px solid white;
+  }
+}
+
+.position-absolute{
+  font-size: 12px;
+}

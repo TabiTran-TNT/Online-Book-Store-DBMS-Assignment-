@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css %}
+  {{ block.super }}
+  <link href="{% static 'css/homepage.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/user_update.css' %}" rel="stylesheet" />
+{% endblock css %}
+{% block javascript %}
+  {{ block.super }}
+  <script defer src="{% static 'js/user_update.js' %}"></script>
+{% endblock javascript %}
+{% block main %}
+  <div class="mb-3 mt-n3 fw-bold py-2 px-2 d-lg-none">YOUR PROFILE</div>
+{% endblock main %}
+{% block content %}
+  <div class="row">
+    <div class="col-lg-2 border-end border-3 d-none d-lg-block pe-1">
+      <div class="h5">Categories</div>
+      <div class="list-group" name="category-list">
+        <a href="{% url 'home' %}"
+           class="list-group-item border-0 rounded-0 list-group-item-action">All Categories</a>
+        {% for category in categories %}
+          <a href="{% url 'home' %}?category={{ category.id }}"
+             class="list-group-item border-0 rounded-0 list-group-item-action {% if selected_category == category.id %}active{% endif %}">
+            {{ category.name }}
+          </a>
+        {% endfor %}
+      </div>
+      <div class="h5">
+        {% if request.user.is_authenticated %}
+          {{ request.user.name }}
+        {% else %}
+          Guest User
+        {% endif %}
+      </div>
+      <div class="list-group">
+        {% if request.user.is_authenticated %}
+          <a href="{% url 'users:update' %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action active">My Profile</a>
+          <a href="{% url 'order:order_history' %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action">My past order</a>
+          <a href="{% url 'account_logout' %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action">Sign Out</a>
+        {% else %}
+          <a href="#login"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#login">Sign in</a>
+          <a href="#signup"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#signUp">Sign up</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="col-lg-10">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 col-lg-6">
+          <form method="post" action="{% url 'users:update' %}">
+            {% csrf_token %}
+            {% for field in form %}
+              <div class="form-group {% if field is form.confirm_password %}d-none{% endif %}">
+                <div class="row">
+                  {% if field != form.confirm_password and field != form.password %}
+                    <div class="col-11">
+                      <label class="fw-bold" for="{{ field.id_for_label }}">{{ field.label }}</label>
+                      {% if field.errors %}<div class="align-middle alert custom-error">{{ field.errors|striptags }}</div>{% endif %}
+                      {{ field }}
+                      {% if field == form.current_password %}
+                        {{ form.password }}
+                        {{ form.confirm_password }}
+                      {% endif %}
+                    </div>
+                    <div class="col-1 d-flex justify-content-center align-items-center my-0">
+                      <i class="bi bi-pencil edit-field"
+                         data-field-id="{{ field.id_for_label }}"></i>
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+              {% if field != form.password and field != form.current_password %}
+                <div class="my-2 mx-n3">
+                  <hr />
+                </div>
+              {% endif %}
+            {% endfor %}
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn cancel-button me-2" id="cancel-edit">CANCEL</button>
+              <button type="submit" class="btn save-button rounded-0">SAVE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

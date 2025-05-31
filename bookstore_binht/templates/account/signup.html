@@ -1,0 +1,43 @@
+{% load static i18n %}
+{% load allauth account %}
+
+<div class="modal fade"
+     id="signUp"
+     data-bs-backdrop="static"
+     data-bs-keyboard="false"
+     tabindex="-1"
+     role="dialog"
+     aria-labelledby="signUpTitle"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bolder fs-3" id="signUpTitle">SIGN UP</h5>
+        <button type="button"
+                class="btn-close btn-sm rounded-circle opacity-100"
+                id="closeButton"
+                data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        {% url 'account_signup' as action_url %}
+        {% element form form=signup_form method="post" action=action_url tags="entrance,signup" %}
+        {% slot body %}
+        {% csrf_token %}
+        {% element fields form=signup_form unlabeled=True %}
+      {% endelement %}
+      {{ redirect_field }}
+      <input type="hidden" name="next" value="{{ request.get_full_path }}" />
+    {% endslot %}
+    {% slot actions %}
+    <div class="d-flex justify-content-center signup">
+      {% element button tags="prominent,signup" type="submit" %}
+      {% trans "SUBMIT" %}
+    {% endelement %}
+  </div>
+{% endslot %}
+{% endelement %}
+</div>
+</div>
+</div>
+</div>

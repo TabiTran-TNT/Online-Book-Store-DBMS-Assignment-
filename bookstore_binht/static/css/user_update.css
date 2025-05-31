@@ -1,0 +1,41 @@
+div.mb-3{
+    background-color: #2C98B3;
+    font-weight: 400;
+    color: white;
+}
+
+hr {
+    color: #2C98B3;
+}
+
+.edit-chosen-field{
+    background-color: #C4E3EC !important;
+}
+
+.cancel-button{
+    background-color: #F0AD4E !important;
+    border-radius: 0px !important;
+    color: white;
+    padding: 10px 17px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #DC913C;
+}
+
+.save-button{
+    background-color: #75BAD0 !important;/
+    border-radius: 0px !important;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #5396B0;
+}
+
+.custom-error {
+    border-color: red;
+    border-radius: 0;
+    padding: 10px;
+    margin-top: 10px;
+    color: red;
+}

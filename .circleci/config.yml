@@ -1,0 +1,102 @@
+# Use the latest 2.1 version of CircleCI pipeline process engine.
+# See: https://circleci.com/docs/configuration-reference
+
+# For a detailed guide to building and testing with Python, read the docs:
+# https://circleci.com/docs/language-python/ for more details
+version: 2.1
+
+# Orbs are reusable packages of CircleCI configuration that you may share across projects, enabling you to create encapsulated, parameterized commands, jobs, and executors that can be used across multiple projects.
+# See: https://circleci.com/docs/orb-intro/
+orbs:
+  # See the Python orb documentation here: https://circleci.com/developer/orbs/orb/circleci/python
+  node: circleci/node@6.0.0
+  python: circleci/python@2.1.1
+
+# Define a job to be invoked later in a workflow.
+# See: https://circleci.com/docs/jobs-steps/#jobs-overview & https://circleci.com/docs/configuration-reference/#jobs
+jobs:
+  build-and-run-tests:
+    # Specify the execution environment. You can specify an image from Docker Hub or use one of our convenience images from CircleCI's Developer Hub.
+    # See: https://circleci.com/docs/executor-intro/ & https://circleci.com/docs/configuration-reference/#executor-job
+    docker:
+      # Specify the version you desire here
+      # See:https://circleci.com/developer/images/image/cimg/python
+      - image: cimg/python:3.12
+      - image: cimg/node:20.14.0
+      - image: cimg/postgres:14.1
+        environment:
+          POSTGRES_USER: eastagile
+
+    # Add steps to the job
+    # See: https://circleci.com/docs/jobs-steps/#steps-overview & https://circleci.com/docs/configuration-reference/#steps
+    steps:
+      # Checkout the code as the first step.
+      - checkout
+      - node/install:
+          node-version: '20.14.0'
+      - run:
+          name: Install Node.js dependencies
+          command: |
+            npm install
+      - python/install-packages:
+          pkg-manager: pip
+          pip-dependency-file: requirements/local.txt
+          # app-dir: ~/project/package-directory/  # If your requirements.txt isn't in the root directory.
+          # pip-dependency-file: test-requirements.txt  # if you have a different name for your requirements file, maybe one that combines your runtime and test requirements.
+      - run:
+          name: Install dependencies
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y wget unzip xvfb libxi6 libgconf-2-4
+            wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+            sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+            sudo apt-get update
+
+            # Remove any existing versions of Google Chrome
+            sudo apt-get remove -y google-chrome-stable
+
+            # Install the required dependencies for Google Chrome
+            sudo apt-get install -y fonts-liberation libasound2 libatk-bridge2.0-0 libatk1.0-0 libatspi2.0-0 libcairo2 libcups2 libgbm1 libgtk-3-0 libpango-1.0-0 libu2f-udev libvulkan1 libxdamage1 libxkbcommon0 xdg-utils
+
+            # Install the specific version of Google Chrome
+            wget https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_127.0.6533.119-1_amd64.deb
+            sudo dpkg -i google-chrome-stable_127.0.6533.119-1_amd64.deb
+            sudo apt-get install -f
+            rm google-chrome-stable_127.0.6533.119-1_amd64.deb
+
+            # Download Chromedriver version and 127.0.6533.119
+            wget -N https://storage.googleapis.com/chrome-for-testing-public/127.0.6533.119/linux64/chromedriver-linux64.zip
+            sudo unzip chromedriver-linux64.zip -d /usr/local/bin/
+            rm chromedriver-linux64.zip
+      - run:
+          name: Run BDD and unit tests with Coveralls
+          command: |
+            coverage erase
+
+            # Start Xvfb and run BDD tests
+            Xvfb :99 -ac &
+            export DISPLAY=:99
+            coverage run --data-file=.coverage.django_behave manage.py behave --noinput
+
+            # Run unit tests
+            coverage run --data-file=.coverage.pytest -m pytest
+
+            # Push coverage data to Coveralls
+            coverage combine
+            coveralls
+            coverage report
+
+            # Generate HTML coverage report
+            coverage html
+
+      - store_artifacts:
+          path: htmlcov
+          destination: coverage
+
+# Orchestrate jobs using workflows
+# See: https://circleci.com/docs/workflows/ & https://circleci.com/docs/configuration-reference/#workflows
+workflows:
+  sample: # This is the name of the workflow, feel free to change it to better match your workflow.
+    # Inside the workflow, you define the jobs you want to run.
+    jobs:
+      - build-and-run-tests

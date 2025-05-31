@@ -1,0 +1,26 @@
+.blue-button {
+    background-color: #75BAD0 !important;
+    border-radius: 0px !important;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 0px #5396B0;
+  }
+
+.orange-button {
+    background-color: #F0AD4E !important;
+    border-radius: 0px !important;
+    color: white;
+    padding: 10px 17px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 0px #DC913C;
+  }
+
+.form-select {
+    width: 50%;
+    border-radius: 0px !important;
+    border-color: #75BAD0;
+    color: #75BAD0;
+}

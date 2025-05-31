@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{% load account %}
+{% load allauth %}
+{% load static %}
+
+{% block css %}
+  {{ block.super }}
+  <link href="{% static 'css/homepage.css' %}" rel="stylesheet" />
+{% endblock css %}
+{% block content %}
+  <div class="row justify-content-center">
+    <div class="col-lg-2 border-end border-3 d-none d-lg-block pe-1">
+      <div class="h5">Categories</div>
+      <div class="list-group" name="category-list">
+        <a href="{% url 'home' %}"
+           class="list-group-item border-0 rounded-0 list-group-item-action {% if selected_category is None %}active{% endif %}">
+          All Categories
+        </a>
+        {% for category in categories %}
+          <a href="{{ category.get_absolute_url }}"
+             class="list-group-item border-0 rounded-0 list-group-item-action {% if selected_category == category.id %}active{% endif %}">
+            {{ category.name }}
+          </a>
+        {% endfor %}
+      </div>
+      {% url 'cart:cart_detail' as cart_detail_url %}
+      <a href="{{ cart_detail_url }}"
+         class="h5 list-group-item border-0 rounded-0 py-1 list-group-item-action {% if request.path == cart_detail_url %}active{% endif %}">
+        Cart ({{ cart_total_items }})
+      </a>
+      <div class="h5">
+        {% if request.user.is_authenticated %}
+          {{ request.user.name }}
+        {% else %}
+          Guest User
+        {% endif %}
+      </div>
+      <div class="list-group">
+        {% if request.user.is_authenticated %}
+          <a href="{% url 'users:detail' request.user.pk %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action">My Profile</a>
+          <a href="{% url 'account_logout' %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action">Sign Out</a>
+        {% else %}
+          <a href="#login"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#login">Sign in</a>
+          <a href="#signup"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#signUp">Sign up</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="col-10">
+      <div class="h5 text-center">{% trans "Confirm Email Address" %}</div>
+      {% if confirmation %}
+        {% user_display confirmation.email_address.user as user_display %}
+        {% if can_confirm %}
+          {% element p %}
+          {% blocktrans with confirmation.email_address.email as email %}Once you've confirmed that <a href="mailto:{{ email }}">{{ email }}</a> is an email address for registration, you can login the account.{% endblocktrans %}
+        {% endelement %}
+        {% element p %}
+        {% blocktrans %}Click the button below to confirm your email to activate your account.{% endblocktrans %}
+      {% endelement %}
+      {% url 'account_confirm_email' confirmation.key as action_url %}
+      {% element form method="post" action=action_url %}
+      {% slot actions %}
+      {% csrf_token %}
+      {{ redirect_field }}
+      <div class="container d-flex justify-content-center">
+        <button type="submit" class="btn custom-button">{% trans 'Confirm' %}</button>
+      </div>
+    {% endslot %}
+  {% endelement %}
+{% else %}
+  {% element p %}
+  {% blocktrans %}Unable to confirm {{ email }} because it is already confirmed by a different account.{% endblocktrans %}
+{% endelement %}
+{% endif %}
+{% else %}
+{% url 'account_email' as email_url %}
+{% element p %}
+{% blocktrans %}This email confirmation link expired or is invalid. Click the button to issue new mail verification.{% endblocktrans %}
+{% endelement %}
+<div class="container d-flex justify-content-center">
+  <button href="{{ email_url }}" class="btn custom-button">Resend email verification</button>
+</div>
+{% endif %}
+</div>
+</div>
+{% endblock content %}

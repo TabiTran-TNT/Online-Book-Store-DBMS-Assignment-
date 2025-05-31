@@ -1,0 +1,57 @@
+[
+    {
+        "model": "users.user",
+        "pk": 1,
+        "fields": {
+            "email": "admin@example.com",
+            "name": "Admin user",
+            "password": "Q2}Wj$_<E",
+            "birthday": "01/10/1990",
+            "phone": "0123456789"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 2,
+        "fields": {
+            "email": "user1@example.com",
+            "password": "LP)m!]}(1",
+            "name": "User 1",
+            "birthday": "01/10/1990",
+            "phone": "0123456789"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 3,
+        "fields": {
+          "email": "user2@example.com",
+          "password": "e|zI&+pW3",
+          "name": "User 2",
+          "birthday": "01/10/1990",
+          "phone": "0123456789"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 4,
+        "fields": {
+            "email": "user3@example.com",
+            "password": ":Q#@q<;gc",
+            "name": "User 3",
+            "birthday": "01/10/1990",
+            "phone": "0123456789"
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 5,
+        "fields": {
+            "email": "user4@example.com",
+            "password": ":47u0W?gmI",
+            "name": "User 4",
+            "birthday": "01/10/1990",
+            "phone": "0123456789"
+        }
+    }
+  ]

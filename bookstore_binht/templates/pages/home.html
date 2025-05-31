@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+
+{% load static i18n rounding_filters %}
+{% load book_tags %}
+{% load pagination_tags %}
+
+{% block css %}
+  {{ block.super }}
+  <link href="{% static 'css/homepage.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/pagination.css' %}" rel="stylesheet" />
+{% endblock css %}
+{% block content %}
+  <div class="my-n3 mx-n3 py-2 px-4 d-lg-none">
+    {% if request.GET.search %}
+      RESULTS
+    {% elif selected_category %}
+      {% for category in categories %}
+        {% if selected_category == category.id %}{{ category.name | upper }}{% endif %}
+      {% endfor %}
+    {% else %}
+      ALL CATEGORIES
+    {% endif %}
+  </div>
+  <div class="row">
+    <div class="col-lg-2 border-end border-3 d-none d-lg-block pe-1">
+      <div class="h5">Categories</div>
+      <div class="list-group" name="category-list">
+        <a href="{% url 'home' %}"
+           class="list-group-item border-0 rounded-0 list-group-item-action {% if selected_category is None %}active{% endif %}">
+          All Categories
+        </a>
+        {% for category in categories %}
+          <a href="{{ category.get_absolute_url }}"
+             class="list-group-item border-0 rounded-0 list-group-item-action {% if selected_category == category.id %}active{% endif %}">
+            {{ category.name }}
+          </a>
+        {% endfor %}
+      </div>
+      {% url 'cart:cart_detail' as cart_detail_url %}
+      <a href="{{ cart_detail_url }}"
+         class="h5 list-group-item border-0 rounded-0 mb-3 py-1 list-group-item-action {% if request.path == cart_detail_url %}active{% endif %}">
+        Cart ({{ cart_total_items }})
+      </a>
+      <div class="h5">
+        {% if request.user.is_authenticated %}
+          {{ request.user.name }}
+        {% else %}
+          Guest User
+        {% endif %}
+      </div>
+      <div class="list-group">
+        {% if request.user.is_authenticated %}
+          <a href="{% url 'users:detail' request.user.pk %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action">My Profile</a>
+          <a href="{% url 'order:order_history' %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action">My past order</a>
+          <a href="#logout"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             id="logout-sidebar"
+             data-bs-toggle="modal"
+             data-bs-target="#logout">{% translate "Sign Out" %}</a>
+        {% else %}
+          <a href="#login"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#login">Sign in</a>
+          <a href="#signup"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#signUp">Sign up</a>
+        {% endif %}
+      </div>
+    </div>
+    <div class="col-lg-10 container-fluid" name="book-list">
+      {% if books %}
+        <div class="row">
+          {% for book in books %}
+            <div class="col-12 col-sm-6  col-lg-2-4 my-4">
+              <div class="card mx-auto" name="book-item">
+                <div class="row">
+                  <div class="col-5 col-sm-5 col-lg-12 mb-lg-n4" name="book-image">
+                    <a href="{% url 'books:book_detail' book.id %}">
+                      <img src="{{ book.get_photo_url }}"
+                           class="card-img-top d-lg-none"
+                           alt="{{ book.title }}"
+                           width="120"
+                           height="200" />
+                      <img src="{{ book.get_photo_url }}"
+                           class="d-none d-lg-block"
+                           alt="{{ book.title }}"
+                           width="140"
+                           height="180" />
+                    </a>
+                  </div>
+                  <div class="col-7 col-sm-7 col-lg-12 px-lg-0">
+                    <div class="card-body row">
+                      <h5 class="card-title col-lg-12">
+                        <a href="{% url 'books:book_detail' book.id %}"
+                           class="text-decoration-none text-reset"
+                           name="book-title">{{ book.title }}</a>
+                      </h5>
+                      <p class="col-lg-12 text-truncate" name="author-name">{{ book.author_name }}</p>
+                      <p class="col-lg-12 d-flex align-items-center gap-1" name="rating">
+                        {% star_rating book.star_ratings %}
+                        ({{ book.total_rating_count }})
+                      </p>
+                      <div class="col-lg-12 price-button order-lg-first mt-lg-n1 mb-lg-3"
+                           name="button-price">
+                        <form method="post">
+                          {% csrf_token %}
+                          <button class="btn custom-button add-to-cart"
+                                  data-book-id="{{ book.id }}"
+                                  type="button">
+                            <span class="price">{{ book.get_formatted_price }}</span>
+                            <span class="cart-icon mb-n3 pb-3">
+                              <i class="fas fa-shopping-cart"></i>
+                            </span>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% else %}
+        <div class="alert alert-info" role="alert">
+          {% if selected_category %}
+            No books found in this category.
+          {% else %}
+            No books available.
+          {% endif %}
+        </div>
+      {% endif %}
+      <div class="row justify-content-center border-top border-bottom border-2">
+        <div class="col-sm-4 mt-1 d-none d-sm-block ps-lg-4">
+          <form id="per-page-form" method="get" action="">
+            <div class="items-per-page">
+              <label class="fw-bold me-1" for="per-page">Items/page</label>
+              <select id="per-page" name="per_page" onchange="this.form.submit()">
+                {% items_per_page_options request.GET.per_page %}
+              </select>
+            </div>
+            {% if request.GET.page %}<input type="hidden" name="page" value="{{ request.GET.page }}" />{% endif %}
+          </form>
+        </div>
+        <div class="col-sm-6 col-lg-8">
+          <nav aria-label="Page navigation" class="mb-3 mb-sm-0">
+            <ul class="pagination justify-content-center justify-content-sm-end d-sm-flex mb-0 mt-0">
+              {% render_page_link page_obj 'first' sm_display=True request=request %}
+              {% render_page_link page_obj 'previous' sm_display=True request=request %}
+              {% for page_number in elided_page_range %}
+                {% if page_number == page_obj.paginator.ELLIPSIS %}
+                  <li class="page-item disabled">
+                    <span class="page-link">...</span>
+                  </li>
+                {% else %}
+                  <li class="page-item {% if page_number == page_obj.number %}active{% endif %}">
+                    <a class="page-link"
+                       href="?{% for key,value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_number }}">{{ page_number }}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+              {% render_page_link page_obj 'next' sm_display=True request=request %}
+              {% render_page_link page_obj 'last' sm_display=True request=request %}
+            </ul>
+            <ul class="pagination justify-content-center d-flex d-sm-none my-0">
+              {% render_page_link page_obj 'first' sm_display=False request=request %}
+              {% render_page_link page_obj 'previous' sm_display=False request=request %}
+              {% render_page_link page_obj 'next' sm_display=False request=request %}
+              {% render_page_link page_obj 'last' sm_display=False request=request %}
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}

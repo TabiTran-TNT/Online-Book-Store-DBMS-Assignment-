@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+
+{% load static i18n rounding_filters %}
+{% load book_tags %}
+
+{% block css %}
+  {{ block.super }}
+  <link href="{% static 'css/homepage.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/cart_page.css' %}" rel="stylesheet" />
+{% endblock css %}
+{% block javascript %}
+  {{ block.super }}
+  <script src="{% static 'js/book_detail.js' %}"></script>
+  <script src="{% static 'js/checkout_handler.js' %}"></script>
+{% endblock javascript %}
+{% block main %}
+  <div class="mb-2 mt-n3 fw-bold py-2 px-2 d-sm-none">YOUR CART</div>
+  <div class="mb-2 mt-n3 fw-bold py-2 px-2 d-none d-sm-block d-lg-none"
+       name="header-cart">YOUR CART ({{ cart_total_items }})</div>
+{% endblock main %}
+{% block content %}
+  <div class="row">
+    <div class="col-lg-2 border-end border-3 d-none d-lg-block pe-1">
+      <div class="h5">Categories</div>
+      <div class="list-group" name="category-list">
+        <a href="{% url 'home' %}"
+           class="list-group-item border-0 rounded-0 list-group-item-action {% if selected_category is None %}active{% endif %}">
+          All Categories
+        </a>
+        {% for category in categories %}
+          <a href="{{ category.get_absolute_url }}"
+             class="list-group-item border-0 rounded-0 list-group-item-action {% if selected_category == category.id %}active{% endif %}">
+            {{ category.name }}
+          </a>
+        {% endfor %}
+      </div>
+      <div class="h5">
+        {% if request.user.is_authenticated %}
+          {{ request.user.name }}
+        {% else %}
+          Guest User
+        {% endif %}
+      </div>
+      <div class="list-group">
+        {% if request.user.is_authenticated %}
+          <a href="{% url 'users:detail' request.user.pk %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action">My Profile</a>
+          <a href="{% url 'account_logout' %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action">Sign Out</a>
+        {% else %}
+          <a href="#login"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#login">Sign in</a>
+          <a href="{% url 'account_signup' %}"
+             class="list-group-item border-0 rounded-0 list-group-item-action"
+             data-bs-toggle="modal"
+             data-bs-target="#signUp">Sign up</a>
+        {% endif %}
+      </div>
+      {% url 'cart:cart_detail' as cart_detail_url %}
+      <a href="{{ cart_detail_url }}"
+         class="h5 list-group-item border-0 rounded-0 py-1 list-group-item-action {% if request.path == cart_detail_url %}active{% endif %}"
+         name="cart-sidebar">Cart ({{ cart_total_items }})</a>
+    </div>
+    <div class="col-lg-10">
+      <div class="container-fluid px-0">
+        {% if cart_total_items == 0 %}
+          <div class="text-center">
+            <p class="my-5">Your cart is currently empty</p>
+            <a href="{% url 'home' %}" class="btn continue-shopping">Back to shopping</a>
+          </div>
+        {% else %}
+          <div class="book-item row mb-0 px-0 justify-content-start d-none d-lg-flex">
+            <div class="col-7 d-block py-2 px-3 fw-bold" name="cart-header-list">YOUR CART ({{ cart_total_items }})</div>
+            <div class="col-2 text-center py-2 px-0 fw-bold">Price</div>
+            <div class="col-2 text-end py-2 px-0 fw-bold">Quantity</div>
+            <div class="col-1 text-end py-2 px-0 fw-bold">Remove</div>
+            <div class="mt-0 px-0">
+              <hr class="mt-0" />
+            </div>
+          </div>
+          {% for item in cart %}
+            {% with book=item.book %}
+              <div class="book-item row mb-0 px-0 justify-content-sm-start"
+                   id="book-{{ book.id }}"
+                   name="book-item">
+                <div class="col-4 col-sm-2 d-block justify-content-end py-2">
+                  <img class="img-fluid" src="{{ book.photo.url }}" alt="book {{ book.id }}" />
+                </div>
+                <div class="col-8 col-sm-10 px-0 d-flex flex-column flex-sm-row justify-content-between">
+                  <div class="d-sm-none">
+                    <div class=" line-clamp-2 fw-bold px-0 py-1">{{ book.title }}</div>
+                    <div class="price">{{ book.get_formatted_price }}</div>
+                  </div>
+                  <div class="d-none d-sm-block col-6">
+                    <div class="fw-bold px-0 py-1" name="book-title">{{ book.title }}</div>
+                  </div>
+                  <div class="d-none d-sm-flex col-2 align-items-center">
+                    <div class="price" name="unit-price">{{ book.get_formatted_price }}</div>
+                  </div>
+                  <div class="row justify-content-end justify-content-sm-center mx-0 align-items-end align-items-sm-center">
+                    <div class="col-2 col-sm-3 d-flex justify-content-end px-0">
+                      <form method="post">
+                        {% csrf_token %}
+                        <button class="btn decrease-from-cart px-3"
+                                data-book-id="{{ book.id }}"
+                                type="button">-</button>
+                      </form>
+                    </div>
+                    <div class="col-2 col-sm-3 d-flex justify-content-center mx-0 px-0 my-0">
+                      <div class="btn cart-button text-center px-3 px-1"
+                           id="{{ book.id }}"
+                           name="book-quantity">{{ item.quantity }}</div>
+                    </div>
+                    <div class="col-2 col-sm-3 d-flex justify-content-start px-0">
+                      <form method="post">
+                        {% csrf_token %}
+                        <button class="btn add-to-cart px-3"
+                                data-book-id="{{ book.id }}"
+                                type="button">+</button>
+                      </form>
+                    </div>
+                    <div class="col-2 col-sm-3 justify-content-start mx-0 px-0">
+                      <div class="container-fluid mx-0 px-0">
+                        <form class="text-end"
+                              action="{% url "cart:cart_remove" book.id %}"
+                              method="post">
+                          {% csrf_token %}
+                          <button class="btn cart-button delete-cart-item"
+                                  data-book-id="{{ book.id }}"
+                                  type="submit">
+                            <i class="bi bi-trash3-fill"></i>
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-0 px-0">
+                  <hr class="mt-0" />
+                </div>
+              </div>
+            {% endwith %}
+          {% endfor %}
+          <div class="row">
+            <div class="col-6 col-sm-7 col-lg-2 text-start text-lg-end fw-bold">Total</div>
+            <div class="col-6 col-sm-5 col-lg-7 price total-cart-price fw-bold text-end text-sm-start text-lg-end px-lg-3">
+              {{ cart.get_total_price }}
+            </div>
+            <div class="mt-1 px-0">
+              <hr />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 d-none d-lg-flex justify-content-end pe-1">
+              <a href="{% url 'home' %}" class="btn continue-shopping">Back to shopping</a>
+            </div>
+            <div class="col-lg-6 d-flex col-12 justify-content-center justify-content-lg-start ps-1 my-0">
+              <a href="{% url 'order:checkout' %}"
+                 class="btn checkout"
+                 id="checkoutButton"
+                 data-authenticated="{{ request.user.is_authenticated|yesno:'true,false' }}">CHECK OUT</a>
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endblock content %}

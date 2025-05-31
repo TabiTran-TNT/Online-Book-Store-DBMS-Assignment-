@@ -1,0 +1,14 @@
+.icon-large {
+    font-size: 24px; /* Change this value to make the icon bigger or smaller */
+}
+
+.dropdown-menu{
+    background-color: #75BAD0 !important;
+    border-radius: 0px !important;
+    border: none;
+}
+
+.dropdown-item{
+    color: white !important;
+    font-size: 1rem !important;
+}

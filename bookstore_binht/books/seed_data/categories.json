@@ -1,0 +1,82 @@
+[
+    {
+      "model": "books.category",
+      "pk": 1,
+      "fields": {
+        "name": "Science",
+        "sort_order": 8
+      }
+    },
+    {
+      "model": "books.category",
+      "pk": 2,
+      "fields": {
+        "name": "Adventure",
+        "sort_order": 2
+      }
+    },
+    {
+      "model": "books.category",
+      "pk": 3,
+      "fields": {
+        "name": "Education",
+        "sort_order": 6
+      }
+    },
+    {
+      "model": "books.category",
+      "pk": 4,
+      "fields": {
+        "name": "Business",
+        "sort_order": 10
+      }
+    },
+    {
+      "model": "books.category",
+      "pk": 5,
+      "fields": {
+        "name": "Fiction",
+        "sort_order": 0
+      }
+    },
+    {
+      "model": "books.category",
+      "pk": 6,
+      "fields": {
+        "name": "Language",
+        "sort_order": 0
+      }
+    },
+    {
+      "model": "books.category",
+      "pk": 7,
+      "fields": {
+        "name": "Computer Science",
+        "sort_order": 10
+      }
+    },
+    {
+      "model": "books.category",
+      "pk": 9,
+      "fields": {
+        "name": "History",
+        "sort_order": 0
+      }
+    },
+    {
+      "model": "books.category",
+      "pk": 10,
+      "fields": {
+        "name": "Technology",
+        "sort_order": 8
+      }
+    },
+    {
+      "model": "books.category",
+      "pk": 11,
+      "fields": {
+        "name": "Software Engineering",
+        "sort_order": 0
+      }
+    }
+  ]
